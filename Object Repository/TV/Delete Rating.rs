@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Create Session With Login</name>
+   <name>Delete Rating</name>
    <tag></tag>
-   <elementGuidId>290d72b8-ea94-4dd2-b982-360dfb2700dc</elementGuidId>
+   <elementGuidId>5a91348d-2d63-48a8-8c7c-5902cc56da8e</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;username\&quot;: \&quot;hungha\&quot;,\n  \&quot;password\&quot;: \&quot;kmsus@2010\&quot;,\n  \&quot;request_token\&quot;: \&quot;bf33b4675d690004d096c84b4f1422c5d1593e85\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;value\&quot;: 8.5\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -18,23 +18,16 @@
       <matchCondition>equals</matchCondition>
       <name>Content-Type</name>
       <type>Main</type>
-      <value>application/json</value>
+      <value>application/json;charset=utf-8</value>
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;=</restUrl>
+   <restRequestMethod>DELETE</restRequestMethod>
+   <restUrl>https://api.themoviedb.org/3/tv/75219/rating?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
    <soapRequestMethod></soapRequestMethod>
    <soapServiceFunction></soapServiceFunction>
-   <variables>
-      <defaultValue>GlobalVariable.requestToken</defaultValue>
-      <description></description>
-      <id>07e40cbc-8013-4777-bb51-38e83a254f1b</id>
-      <masked>false</masked>
-      <name>requestToken</name>
-   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject
