@@ -11,7 +11,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/guest_session/1cc4c21f9b6ffd1a41abf72b3a4305d5/rated/tv/episodes?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
+   <restUrl>https://api.themoviedb.org/3/guest_session/63c7980fa786c1e254b0c5a0feb74467/rated/movie?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

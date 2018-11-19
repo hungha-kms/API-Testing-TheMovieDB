@@ -6,12 +6,22 @@
    <defaultProfile>true</defaultProfile>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'AX'</initValue>
-      <name>countryISOCode</name>
+      <initValue>'5ce5e065a65b43e5032961fbfb5fb44cfc2b2fce'</initValue>
+      <name>requestToken</name>
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>'Alex'</initValue>
-      <name>userName</name>
+      <initValue>'7e5025325ed996a9f5b73d139c82d44b'</initValue>
+      <name>apiKey</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'hungha'</initValue>
+      <name>username</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'kmsus@2010'</initValue>
+      <name>password</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

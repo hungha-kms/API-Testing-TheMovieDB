@@ -15,7 +15,7 @@
    <httpBodyType>text</httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/authentication/session?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;session_id=7e7e23636f1bfb91d5fc64f39bd261509a9de15b</restUrl>
+   <restUrl>https://api.themoviedb.org/3/authentication/session?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;session_id=7bf87a44c176b510b820cdb15dbd49bd</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

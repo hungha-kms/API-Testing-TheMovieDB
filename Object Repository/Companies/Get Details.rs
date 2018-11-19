@@ -11,7 +11,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/company/86082?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
+   <restUrl>https://api.themoviedb.org/3/company/26396?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

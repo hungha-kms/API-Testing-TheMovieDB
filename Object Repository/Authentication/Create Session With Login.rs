@@ -8,7 +8,7 @@
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;username\&quot;: \&quot;hungha\&quot;,\n  \&quot;password\&quot;: \&quot;kmsus@2010\&quot;,\n  \&quot;request_token\&quot;: \&quot;bf33b4675d690004d096c84b4f1422c5d1593e85\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;username\&quot;: \&quot;${username}\&quot;,\n  \&quot;password\&quot;: \&quot;${password}\&quot;,\n  \&quot;request_token\&quot;: \&quot;${requestToken}\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,7 +22,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;=</restUrl>
+   <restUrl>https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -34,6 +34,20 @@
       <id>07e40cbc-8013-4777-bb51-38e83a254f1b</id>
       <masked>false</masked>
       <name>requestToken</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.username</defaultValue>
+      <description></description>
+      <id>f89219fb-93c1-47a0-b227-ed745e2ab5c7</id>
+      <masked>false</masked>
+      <name>username</name>
+   </variables>
+   <variables>
+      <defaultValue>GlobalVariable.password</defaultValue>
+      <description></description>
+      <id>1a6ec8ac-5e6a-4ea1-8d54-a59b9d1297af</id>
+      <masked>false</masked>
+      <name>password</name>
    </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
@@ -48,6 +62,11 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+
+
+def variables = request.getVariables()
+def variable = variables.get('requestToken')
+println (&quot;++++++++request token: &quot;+variable)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

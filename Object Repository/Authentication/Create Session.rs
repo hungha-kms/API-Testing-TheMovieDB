@@ -15,7 +15,7 @@
    <httpBodyType>text</httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/authentication/session/new?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;request_token=bf33b4675d690004d096c84b4f1422c5d1593e85</restUrl>
+   <restUrl>https://api.themoviedb.org/3/authentication/session/new?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;request_token=14ed7a4d669b581260523a9599491a6a45d934c0</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

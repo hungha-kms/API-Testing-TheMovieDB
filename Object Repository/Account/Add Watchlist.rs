@@ -8,7 +8,7 @@
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;media_type\&quot;: \&quot;movie\&quot;,\n  \&quot;media_id\&quot;: 11,\n  \&quot;watchlist\&quot;: true\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;media_type\&quot;: \&quot;tv\&quot;,\n  \&quot;media_id\&quot;: 4629,\n  \&quot;watchlist\&quot;: true\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,7 +22,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/account/95513/watchlist?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;session_id=67d098ef87ef3ebd541d53a260db2844c43628d1</restUrl>
+   <restUrl>https://api.themoviedb.org/3/account/8109840/watchlist?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;session_id=209a08fd9c378d6e035aaf1c1bff19000199619f</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
