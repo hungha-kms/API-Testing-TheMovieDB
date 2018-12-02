@@ -1,21 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Delete List</name>
+   <name>Get Lists</name>
    <tag></tag>
-   <elementGuidId>556687a3-6ad2-4265-ae9e-296f5b5877f7</elementGuidId>
+   <elementGuidId>7a69b250-ce99-4e7d-bf83-65f0bdee3168</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
-   <httpBodyContent>{
-  &quot;text&quot;: &quot;&quot;,
-  &quot;contentType&quot;: &quot;text/plain&quot;,
-  &quot;charset&quot;: &quot;UTF-8&quot;
-}</httpBodyContent>
-   <httpBodyType>text</httpBodyType>
+   <httpBodyContent></httpBodyContent>
+   <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
-   <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/list/96416?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;session_id=a8399445a190c118381cc1179bda6bee433d1ff9</restUrl>
+   <restRequestMethod>GET</restRequestMethod>
+   <restUrl>https://api.themoviedb.org/3/movie/18/lists?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

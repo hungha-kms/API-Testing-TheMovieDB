@@ -8,47 +8,31 @@ import com.kms.katalon.core.mobile.keyword.MobileBuiltInKeywords as Mobile
 import com.kms.katalon.core.model.FailureHandling as FailureHandling
 import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
+import com.kms.katalon.core.testobject.ConditionType
+import com.kms.katalon.core.testobject.RequestObject
 import com.kms.katalon.core.testobject.TestObject as TestObject
+import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
-import com.kms.katalon.core.testobject.RequestObject
-import com.kms.katalon.core.testobject.ResponseObject
-import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
 import internal.GlobalVariable as GlobalVariable
-import theMovieDB.TheMovieDBCommon
+import theMovieDB.Movie
 
-response1 = WS.sendRequest(findTestObject('Search/Search Keywords'))
+response1 = WS.sendRequest(findTestObject('Movies/Get Top Rated'))
 
 def slurper = new groovy.json.JsonSlurper()
+
 def dataValue = slurper.parseText(response1.getResponseBodyContent())
-//int randomNumber = (int)(Math.random() * (dataValue.results.size()-1))
-//def keywordID = dataValue.results[randomNumber].id
 
-int resultSize = dataValue.results.size()-1
+int resultSize = dataValue.results.size() - 1
 
-def keywordID = null
-RequestObject ro = null
-String body = '{"dummyRequest":"yes"}'
-String endpoint = ''
-ResponseObject respObj = null
+if (resultSize >= 0) {
+	int i = ((Math.random() * resultSize) as int)
 
-0.upto(resultSize){
-	
-	keywordID = dataValue.results[it].id
-	ro = new RequestObject('objectId')
-	
-	
-	endpoint = 'https://api.themoviedb.org/3/keyword/'+keywordID+'/movies?'
-	
-	endpoint = ((endpoint + 'api_key=') + GlobalVariable.apiKey)
-	
-	ro.setRestUrl(endpoint)
-	
-	ro.setRestRequestMethod('GET')
-	
-	ro.setBodyContent(new HttpTextBodyContent(body))
-	respObj = WS.sendRequest(ro)
+	response1 = Movie.getCredits(dataValue.results[i].id)
+
+	TheMovieDBCommon.printDataValue(response1, 'Movies/Get Credits')
+	//TheMovieDBCommon.printDataValue(Movie.getAccountStates(dataValue.results[i].id), 'Movie/Get Account States')
+	resultSize = -1
 	
 	
-	TheMovieDBCommon.printDataValue(respObj, 'Keyword/Get Movies '+it)
 }

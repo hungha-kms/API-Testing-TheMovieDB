@@ -21,23 +21,32 @@ response1 = WS.sendRequest(findTestObject('Search/Search Keywords'))
 
 def slurper = new groovy.json.JsonSlurper()
 def dataValue = slurper.parseText(response1.getResponseBodyContent())
-int randomNumber = (int)(Math.random() * (dataValue.results.size()-1))
-def keywordID = dataValue.results[randomNumber].id
 
-RequestObject ro = new RequestObject('objectId')
+int resultSize = dataValue.results.size()-1
 
+def keywordID = null
+RequestObject ro = null
 String body = '{"dummyRequest":"yes"}'
-String endpoint = 'https://api.themoviedb.org/3/keyword/'+keywordID+'?'
+String endpoint = ''
+ResponseObject respObj = null
 
-endpoint = ((endpoint + 'api_key=') + GlobalVariable.apiKey)
-
-ro.setRestUrl(endpoint)
-
-ro.setRestRequestMethod('GET')
-
-ro.setBodyContent(new HttpTextBodyContent(body))
-ResponseObject respObj = WS.sendRequest(ro)
-
-
-TheMovieDBCommon.printDataValue(respObj, 'Keyword/Get Details')
+0.upto(resultSize){
 	
+	keywordID = dataValue.results[it].id
+	ro = new RequestObject('objectId')
+	
+	
+	endpoint = 'https://api.themoviedb.org/3/keyword/'+keywordID+'?'
+	
+	endpoint = ((endpoint + 'api_key=') + GlobalVariable.apiKey)
+	
+	ro.setRestUrl(endpoint)
+	
+	ro.setRestRequestMethod('GET')
+	
+	ro.setBodyContent(new HttpTextBodyContent(body))
+	respObj = WS.sendRequest(ro)
+	
+	
+	TheMovieDBCommon.printDataValue(respObj, 'Keyword/Get Details '+it)
+}

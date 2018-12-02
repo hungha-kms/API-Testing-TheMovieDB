@@ -24,4 +24,14 @@
       <initValue>'kmsus@2010'</initValue>
       <name>password</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'96418'</initValue>
+      <name>listID</name>
+   </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'63c7980fa786c1e254b0c5a0feb74467'</initValue>
+      <name>guestSessionID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

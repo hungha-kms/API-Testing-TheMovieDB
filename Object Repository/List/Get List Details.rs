@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <WebServiceRequestEntity>
    <description></description>
-   <name>Get List</name>
+   <name>Get List Details</name>
    <tag></tag>
-   <elementGuidId>7a69b250-ce99-4e7d-bf83-65f0bdee3168</elementGuidId>
+   <elementGuidId>5eb000e9-4386-4c73-83fa-d4a0f4dedeae</elementGuidId>
    <selectorMethod>BASIC</selectorMethod>
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
@@ -11,7 +11,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/movie/18/lists?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
+   <restUrl>https://developers.themoviedb.org/3/lists/get-list-details?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

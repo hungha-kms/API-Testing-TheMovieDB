@@ -11,7 +11,7 @@
    <httpBodyType></httpBodyType>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>GET</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/list/95508/item_status?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
+   <restUrl>https://api.themoviedb.org/3/list/96418/item_status?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;movie_id=10068</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>
@@ -30,6 +30,7 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
+
 </verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>
