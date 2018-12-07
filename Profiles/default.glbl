@@ -34,4 +34,9 @@
       <initValue>'63c7980fa786c1e254b0c5a0feb74467'</initValue>
       <name>guestSessionID</name>
    </GlobalVariableEntity>
+   <GlobalVariableEntity>
+      <description></description>
+      <initValue>'8109840'</initValue>
+      <name>accountID</name>
+   </GlobalVariableEntity>
 </GlobalVariableEntities>

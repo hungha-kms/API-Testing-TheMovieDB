@@ -4,6 +4,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static groovy.json.JsonOutput.toJson
 
 import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
 import com.kms.katalon.core.annotation.Keyword
@@ -30,6 +31,7 @@ public class Movie {
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
+		params.add(new TestObjectProperty('guest_session_id', ConditionType.EQUALS, GlobalVariable.guestSessionID))
 		reqObj.setRestParameters(params)
 		return WS.sendRequest(reqObj)
 	}
@@ -115,13 +117,7 @@ public class Movie {
 	}
 
 	public static ResponseObject getlatest(){
-		RequestObject reqObj = findTestObject('Movies/Get Latest')
-		String urlStr = 'https://api.themoviedb.org/3/movie/latest'
-		reqObj.setRestUrl(urlStr)
-		List<TestObjectProperty> params = new ArrayList()
-		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
-		reqObj.setRestParameters(params)
-		return WS.sendRequest(reqObj)
+		return WS.sendRequest(findTestObject('Movies/Get Latest'))
 	}
 
 	public static ResponseObject getLists(int id){
@@ -135,23 +131,11 @@ public class Movie {
 	}
 
 	public static ResponseObject getNowPlay(){
-		RequestObject reqObj = findTestObject('Movies/Get Now Playing')
-		String urlStr = 'https://api.themoviedb.org/3/movie/now_playing'
-		reqObj.setRestUrl(urlStr)
-		List<TestObjectProperty> params = new ArrayList()
-		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
-		reqObj.setRestParameters(params)
-		return WS.sendRequest(reqObj)
+		return WS.sendRequest(findTestObject('Movies/Get Now Playing'))
 	}
 
 	public static ResponseObject getPopular(){
-		RequestObject reqObj = findTestObject('Movies/Get Popular')
-		String urlStr = 'https://api.themoviedb.org/3/movie/popular'
-		reqObj.setRestUrl(urlStr)
-		List<TestObjectProperty> params = new ArrayList()
-		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
-		reqObj.setRestParameters(params)
-		return WS.sendRequest(reqObj)
+		return WS.sendRequest(findTestObject('Movies/Get Popular'))
 	}
 
 	public static ResponseObject getRecommendations(int id){
@@ -195,13 +179,7 @@ public class Movie {
 	}
 
 	public static ResponseObject getTopRated(){
-		RequestObject reqObj = findTestObject('Movies/Get Top Rated')
-		String urlStr = 'https://api.themoviedb.org/3/movie/top_rated'
-		reqObj.setRestUrl(urlStr)
-		List<TestObjectProperty> params = new ArrayList()
-		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
-		reqObj.setRestParameters(params)
-		return WS.sendRequest(reqObj)
+		return WS.sendRequest(findTestObject('Movies/Get Top Rated'))
 	}
 
 	public static ResponseObject getTranslations(int id){
@@ -214,14 +192,8 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
-	public static ResponseObject getTopRated(){
-		RequestObject reqObj = findTestObject('Movies/Get Upcoming')
-		String urlStr = 'https://api.themoviedb.org/3/movie/upcoming'
-		reqObj.setRestUrl(urlStr)
-		List<TestObjectProperty> params = new ArrayList()
-		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
-		reqObj.setRestParameters(params)
-		return WS.sendRequest(reqObj)
+	public static ResponseObject getUpComing(){
+		return WS.sendRequest(findTestObject('Movies/Get Upcoming'))
 	}
 
 	public static ResponseObject getVideos(int id){
@@ -234,17 +206,70 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
-	public static ResponseObject getRateMovie(int id, float rating){
+	public static ResponseObject rateMovie(int id, float rating){
 		RequestObject reqObj = findTestObject('Movies/Rate Movie')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/rating'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
+
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
+		params.add(new TestObjectProperty('guest_session_id', ConditionType.EQUALS, GlobalVariable.guestSessionID))
 		reqObj.setRestParameters(params)
-		
+
 		String body = toJson(value: rating)
 		reqObj.setBodyContent(new HttpTextBodyContent(body))
-		
+
 		return WS.sendRequest(reqObj)
+	}
+
+	//Return -1 if getting no movie
+	public static int getRandomMovie(ResponseObject resObj){
+		def slurper = new groovy.json.JsonSlurper()
+		def dataValue = slurper.parseText(resObj.getResponseBodyContent())
+
+		if (dataValue.results == null)
+			return -1
+
+		int resultSize = dataValue.results.size() - 1
+
+		if (resultSize >= 0) {
+			int i = ((Math.random() * resultSize) as int)
+			return dataValue.results[i].id
+		}
+		return -1
+	}
+
+	//return null if getting no review
+	public static String getRandomReview(ResponseObject resObj){
+		def slurper = new groovy.json.JsonSlurper()
+		def dataValue = slurper.parseText(resObj.getResponseBodyContent())
+
+		if (dataValue.results == null)
+			return null
+
+		int resultSize = dataValue.results.size() - 1
+
+		if (resultSize >= 0) {
+			int i = ((Math.random() * resultSize) as int)
+			return dataValue.results[i].id
+		}
+		return null
+	}
+
+	//return null if getting no review
+	public static String getRandomCredit(ResponseObject resObj){
+		def slurper = new groovy.json.JsonSlurper()
+		def dataValue = slurper.parseText(resObj.getResponseBodyContent())
+
+		if (dataValue.cast == null)
+			return null
+
+		int resultSize = dataValue.cast.size() - 1
+
+		if (resultSize >= 0) {
+			int i = ((Math.random() * resultSize) as int)
+			return dataValue.cast[i].credit_id
+		}
+		return null
 	}
 }

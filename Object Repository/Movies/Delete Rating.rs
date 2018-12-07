@@ -8,7 +8,7 @@
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;value\&quot;: 8.5\n}&quot;,
+  &quot;text&quot;: &quot;&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>
@@ -22,7 +22,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>DELETE</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/movie/18/rating?api_key=7e5025325ed996a9f5b73d139c82d44b</restUrl>
+   <restUrl>https://api.themoviedb.org/3/movie/18/rating?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;guest_session_id=63c7980fa786c1e254b0c5a0feb74467</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

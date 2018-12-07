@@ -15,30 +15,16 @@ import com.kms.katalon.core.testobject.TestObjectProperty
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import theMovieDB.Movie
 import theMovieDB.TheMovieDBCommon
 
 
 response1 = WS.sendRequest(findTestObject('Movies/Get Now Playing'))
 
-def slurper = new groovy.json.JsonSlurper()
+int movieID = Movie.getRandomMovie(response1)
 
-def dataValue = slurper.parseText(response1.getResponseBodyContent())
-
-int resultSize = dataValue.results.size() - 1
-
-if (resultSize >= 0) {
-    int i = ((Math.random() * resultSize) as int)
-
-	RequestObject reqObj = findTestObject('Movies/Get Alternative Titles')
-	String urlStr = "https://api.themoviedb.org/3/movie/" + dataValue.results[i].id + "/alternative_titles"
-	reqObj.setRestUrl(urlStr)
-    println('************* URL: ' + urlStr)
-	
-	List<TestObjectProperty> params = new ArrayList()
-	params.add(new TestObjectProperty("api_key",ConditionType.EQUALS, GlobalVariable.apiKey))
-	reqObj.setRestParameters(params)
-	
-	response1 = WS.sendRequest(reqObj)
+if (movieID != -1) {
+	response1 = Movie.getAlternativeTitles(movieID)
 	TheMovieDBCommon.printDataValue(response1, 'Movies/Get Alternative Titles')
 }
 

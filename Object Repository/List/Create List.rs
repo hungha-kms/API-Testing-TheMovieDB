@@ -8,7 +8,7 @@
    <useRalativeImagePath>false</useRalativeImagePath>
    <httpBody></httpBody>
    <httpBodyContent>{
-  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;This is my awesome test list.\&quot;,\n  \&quot;description\&quot;: \&quot;This is a movie that a lot of assian people like since it is related to their culture and Hung Ha love it\&quot;,\n  \&quot;language\&quot;: \&quot;en\&quot;\n}&quot;,
+  &quot;text&quot;: &quot;{\n  \&quot;name\&quot;: \&quot;This is my awesome test list #2.\&quot;,\n  \&quot;description\&quot;: \&quot;Just for testing so no need to explain much!\&quot;,\n  \&quot;language\&quot;: \&quot;en\&quot;\n}&quot;,
   &quot;contentType&quot;: &quot;application/json&quot;,
   &quot;charset&quot;: &quot;UTF-8&quot;
 }</httpBodyContent>

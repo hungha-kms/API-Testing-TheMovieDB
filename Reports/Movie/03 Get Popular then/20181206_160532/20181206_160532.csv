@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+03 Get Popular then,,,2018-12-06 16:05:35,2018-12-06 16:05:43,7.320s,PASSED
+,,,,,,
+Test Cases/Movie/12 Get Popular Get Release Dates,,,2018-12-06 16:05:36,2018-12-06 16:05:39,2.680s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-06 16:05:37,2018-12-06 16:05:38,1.613s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-06 16:05:38,2018-12-06 16:05:38,0.105s,PASSED
+Statement - If (movieID != -1),,,2018-12-06 16:05:38,2018-12-06 16:05:39,0.315s,PASSED
+,,,,,,
+Test Cases/Movie/13 Get Popular Get Recommendations,,,2018-12-06 16:05:39,2018-12-06 16:05:40,0.881s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-06 16:05:39,2018-12-06 16:05:39,0.157s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-06 16:05:39,2018-12-06 16:05:39,0.003s,PASSED
+Statement - If (movieID != -1),,,2018-12-06 16:05:39,2018-12-06 16:05:40,0.202s,PASSED
+,,,,,,
+Test Cases/Movie/14 Get Popular Get Translations,,,2018-12-06 16:05:40,2018-12-06 16:05:40,0.683s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-06 16:05:40,2018-12-06 16:05:40,0.156s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-06 16:05:40,2018-12-06 16:05:40,0.002s,PASSED
+Statement - If (movieID != -1),,,2018-12-06 16:05:40,2018-12-06 16:05:40,0.203s,PASSED
+,,,,,,
+Test Cases/Movie/15 Get Popular Get Videos,,,2018-12-06 16:05:40,2018-12-06 16:05:41,0.687s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-06 16:05:41,2018-12-06 16:05:41,0.156s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-06 16:05:41,2018-12-06 16:05:41,0.008s,PASSED
+Statement - If (movieID != -1),,,2018-12-06 16:05:41,2018-12-06 16:05:41,0.173s,PASSED
+,,,,,,
+Test Cases/Movie/16 Get Popular Get External IDs,,,2018-12-06 16:05:41,2018-12-06 16:05:42,0.648s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-06 16:05:41,2018-12-06 16:05:42,0.164s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-06 16:05:42,2018-12-06 16:05:42,0.003s,PASSED
+Statement - If (movieID != -1),,,2018-12-06 16:05:42,2018-12-06 16:05:42,0.176s,PASSED
+,,,,,,
+Test Cases/Movie/17 Get Popular Rate Movie,,,2018-12-06 16:05:42,2018-12-06 16:05:43,0.829s,PASSED
+Statement - response1 = theMovieDB.Movie.getPopular(),,,2018-12-06 16:05:42,2018-12-06 16:05:42,0.182s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-06 16:05:42,2018-12-06 16:05:42,0.004s,PASSED
+Statement - If (movieID != -1),,,2018-12-06 16:05:42,2018-12-06 16:05:43,0.228s,PASSED
