@@ -25,15 +25,15 @@ import internal.GlobalVariable
 public class Reviews {
 	public static ResponseObject getDetails(String reviewID){
 		if (reviewID == null)
-		return null
-			
-	RequestObject reqObj = findTestObject('Reviews/Get Details')
-	String urlStr = ('https://api.themoviedb.org/3/review/' + reviewID)
-	reqObj.setRestUrl(urlStr)
-	List<TestObjectProperty> params = new ArrayList()
-	params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
-	reqObj.setRestParameters(params)
-	
-	return WS.sendRequest(reqObj)
+			return null
+
+		RequestObject reqObj = findTestObject('Reviews/Get Details')
+		String urlStr = ('https://api.themoviedb.org/3/review/' + reviewID)
+		reqObj.setRestUrl(urlStr)
+		List<TestObjectProperty> params = new ArrayList()
+		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
+		reqObj.setRestParameters(params)
+
+		return WS.sendRequest(reqObj)
 	}
 }

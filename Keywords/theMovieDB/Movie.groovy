@@ -25,6 +25,8 @@ import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable
 
 public class Movie {
+
+	@Keyword
 	public static ResponseObject deleteRating(int id){
 		RequestObject reqObj = findTestObject('Movies/Delete Rating')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/rating'
@@ -36,6 +38,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getAccountStates(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Account States')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/account_states'
@@ -46,6 +49,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getAlternativeTitles(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Alternative Titles')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/alternative_titles'
@@ -56,6 +60,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getChanges(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Changes')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/changes'
@@ -66,6 +71,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getCredits(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Credits')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/credits'
@@ -76,6 +82,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getDetails(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Details')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id
@@ -86,6 +93,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getExternalIDs(int id){
 		RequestObject reqObj = findTestObject('Movies/Get External IDs')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/external_ids'
@@ -96,6 +104,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getImages(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Images')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/images'
@@ -106,6 +115,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getKeywords(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Keywords')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/keywords'
@@ -116,10 +126,12 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getlatest(){
 		return WS.sendRequest(findTestObject('Movies/Get Latest'))
 	}
 
+	@Keyword
 	public static ResponseObject getLists(int id){
 		RequestObject reqObj = findTestObject('Movies/Get Lists')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/lists'
@@ -130,6 +142,7 @@ public class Movie {
 		return WS.sendRequest(reqObj)
 	}
 
+	@Keyword
 	public static ResponseObject getNowPlay(){
 		return WS.sendRequest(findTestObject('Movies/Get Now Playing'))
 	}

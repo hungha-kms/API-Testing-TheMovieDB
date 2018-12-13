@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+02 TV Season TV Airing Today and,,,2018-12-12 16:27:31,2018-12-12 16:27:36,5.000s,PASSED
+,,,,,,
+Test Cases/TV Seasons/06 Get TV Airing Today Get External IDs,,,2018-12-12 16:27:31,2018-12-12 16:27:34,2.458s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTVAiringToday(),,,2018-12-12 16:27:32,2018-12-12 16:27:33,1.400s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-12 16:27:33,2018-12-12 16:27:33,0.080s,PASSED
+Statement - response1 = theMovieDB.TVShow.getDetails(TVID),,,2018-12-12 16:27:33,2018-12-12 16:27:33,0.247s,PASSED
+Statement - seasonNo = theMovieDB.TVShow.getRandomSeason(response1),,,2018-12-12 16:27:33,2018-12-12 16:27:33,0.003s,PASSED
+"Statement - response1 = theMovieDB.TVSeasons.getExternalIDs(TVID, seasonNo)",,,2018-12-12 16:27:33,2018-12-12 16:27:34,0.165s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""TV Seasons/Get External IDs for TVID: "" + TVID + ""; season Number: "" + seasonNo)",,,2018-12-12 16:27:34,2018-12-12 16:27:34,0.040s,PASSED
+,,,,,,
+Test Cases/TV Seasons/07 Get TV Airing Today Get Images,,,2018-12-12 16:27:34,2018-12-12 16:27:35,1.010s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTVAiringToday(),,,2018-12-12 16:27:34,2018-12-12 16:27:34,0.184s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-12 16:27:34,2018-12-12 16:27:34,0.003s,PASSED
+Statement - response1 = theMovieDB.TVShow.getDetails(TVID),,,2018-12-12 16:27:34,2018-12-12 16:27:34,0.145s,PASSED
+Statement - seasonNo = theMovieDB.TVShow.getRandomSeason(response1),,,2018-12-12 16:27:34,2018-12-12 16:27:34,0.007s,PASSED
+"Statement - response1 = theMovieDB.TVSeasons.getImages(TVID, seasonNo)",,,2018-12-12 16:27:34,2018-12-12 16:27:35,0.160s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""TV Seasons/Get Images for TVID: "" + TVID + ""; season Number: "" + seasonNo)",,,2018-12-12 16:27:35,2018-12-12 16:27:35,0.004s,PASSED
+,,,,,,
+Test Cases/TV Seasons/08 Get TV Airing Today Get Videos,,,2018-12-12 16:27:35,2018-12-12 16:27:36,1.004s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTVAiringToday(),,,2018-12-12 16:27:35,2018-12-12 16:27:35,0.207s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-12 16:27:35,2018-12-12 16:27:35,0.003s,PASSED
+Statement - response1 = theMovieDB.TVShow.getDetails(TVID),,,2018-12-12 16:27:35,2018-12-12 16:27:35,0.157s,PASSED
+Statement - seasonNo = theMovieDB.TVShow.getRandomSeason(response1),,,2018-12-12 16:27:35,2018-12-12 16:27:35,0.001s,PASSED
+"Statement - response1 = theMovieDB.TVSeasons.getVideos(TVID, seasonNo)",,,2018-12-12 16:27:35,2018-12-12 16:27:36,0.141s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""TV Seasons/Get Videos for TVID: "" + TVID + ""; season Number: "" + seasonNo)",,,2018-12-12 16:27:36,2018-12-12 16:27:36,0.003s,PASSED

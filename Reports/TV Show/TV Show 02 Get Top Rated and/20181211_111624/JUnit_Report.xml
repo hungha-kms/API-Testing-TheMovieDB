@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TV Show 02 Get Top Rated and" time="6" tests="6" failures="0" errors="0">
+   <testsuite name="TV Show 02 Get Top Rated and" tests="6" failures="0" errors="0" time="6" timestamp="2018-12-11 11:16:27" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/TV Show/TV Show 02 Get Top Rated and">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\TV Show\\TV Show 02 Get Top Rated and\\20181211_111624"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\TV Show\\TV Show 02 Get Top Rated and\\20181211_111624\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/TV Shows/07 Get Top Rated then Get Reviews then Get Details" classname="Test Cases/TV Shows/07 Get Top Rated then Get Reviews then Get Details" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:28 - [TEST_CASE][PASSED] - Test Cases/TV Shows/07 Get Top Rated then Get Reviews then Get Details: Test Cases/TV Shows/07 Get Top Rated then Get Reviews then Get Details
+
+2018-12-11 11:16:28 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTopRated(): Send request successfully
+
+2018-12-11 11:16:30 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - If (TVID != -1): null
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getReviews(TVID): Send request successfully
+
+2018-12-11 11:16:30 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Reviews"): null
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - reviewID = theMovieDB.TVShow.getRandomReview(response1): null
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - If (reviewID != null): null
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-12-11 11:16:30 - [TEST_STEP][PASSED] - Statement - println("&&&&&&&&& No Review &&&&&&&&&&&&"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/08 Get Top Rated then Get Similar TV Show" classname="Test Cases/TV Shows/08 Get Top Rated then Get Similar TV Show" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:30 - [TEST_CASE][PASSED] - Test Cases/TV Shows/08 Get Top Rated then Get Similar TV Show: Test Cases/TV Shows/08 Get Top Rated then Get Similar TV Show
+
+2018-12-11 11:16:31 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTopRated(): Send request successfully
+
+2018-12-11 11:16:31 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:31 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:16:31 - [TEST_STEP][PASSED] - Statement - If (TVID != -1): null
+
+2018-12-11 11:16:31 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getSimilarTVShows(TVID): Send request successfully
+
+2018-12-11 11:16:31 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:31 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Similar TV Show"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/09 Get Top Rated then Get Screened Theatrically" classname="Test Cases/TV Shows/09 Get Top Rated then Get Screened Theatrically" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:31 - [TEST_CASE][PASSED] - Test Cases/TV Shows/09 Get Top Rated then Get Screened Theatrically: Test Cases/TV Shows/09 Get Top Rated then Get Screened Theatrically
+
+2018-12-11 11:16:31 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTopRated(): Send request successfully
+
+2018-12-11 11:16:32 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - If (TVID != -1): null
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getScreenedTheatrically(TVID): Send request successfully
+
+2018-12-11 11:16:32 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Screened Theatrically"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/10 Get Top Rated then Get Recommendations" classname="Test Cases/TV Shows/10 Get Top Rated then Get Recommendations" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:32 - [TEST_CASE][PASSED] - Test Cases/TV Shows/10 Get Top Rated then Get Recommendations: Test Cases/TV Shows/10 Get Top Rated then Get Recommendations
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTopRated(): Send request successfully
+
+2018-12-11 11:16:32 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - If (TVID != -1): null
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getRecommendations(TVID): Send request successfully
+
+2018-12-11 11:16:32 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:32 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Recommendations"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/11 Get Top Rated then Get Videos" classname="Test Cases/TV Shows/11 Get Top Rated then Get Videos" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:32 - [TEST_CASE][PASSED] - Test Cases/TV Shows/11 Get Top Rated then Get Videos: Test Cases/TV Shows/11 Get Top Rated then Get Videos
+
+2018-12-11 11:16:33 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTopRated(): Send request successfully
+
+2018-12-11 11:16:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:33 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:16:33 - [TEST_STEP][PASSED] - Statement - If (TVID != -1): null
+
+2018-12-11 11:16:33 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getVideos(TVID): Send request successfully
+
+2018-12-11 11:16:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:33 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Videos"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/12 Get Top Rated then Get Translations" classname="Test Cases/TV Shows/12 Get Top Rated then Get Translations" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:33 - [TEST_CASE][PASSED] - Test Cases/TV Shows/12 Get Top Rated then Get Translations: Test Cases/TV Shows/12 Get Top Rated then Get Translations
+
+2018-12-11 11:16:34 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTopRated(): Send request successfully
+
+2018-12-11 11:16:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:34 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:16:34 - [TEST_STEP][PASSED] - Statement - If (TVID != -1): null
+
+2018-12-11 11:16:34 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTranslations(TVID): Send request successfully
+
+2018-12-11 11:16:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:34 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Translations"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-11 11:16:27 - [TEST_SUITE][PASSED] - TV Show 02 Get Top Rated and: Test Cases/TV Shows/12 Get Top Rated then Get Translations]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

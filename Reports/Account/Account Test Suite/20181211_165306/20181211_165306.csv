@@ -1,0 +1,138 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Account Test Suite,,,2018-12-11 16:53:09,2018-12-11 16:53:23,13.840s,PASSED
+,,,,,,
+Test Cases/Account/01 Get Favorite TV Shows,,,2018-12-11 16:53:10,2018-12-11 16:53:13,2.669s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:11,2018-12-11 16:53:11,0.010s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:11,2018-12-11 16:53:12,1.944s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Favorite TV Shows),,,2018-12-11 16:53:12,2018-12-11 16:53:12,0.008s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:12,2018-12-11 16:53:12,0.001s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:12,2018-12-11 16:53:13,0.010s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:13,2018-12-11 16:53:13,0.004s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:13,2018-12-11 16:53:13,0.001s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:13,2018-12-11 16:53:13,0.002s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:13,2018-12-11 16:53:13,0.133s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Favorite TV Shows"")",,,2018-12-11 16:53:13,2018-12-11 16:53:13,0.043s,PASSED
+,,,,,,
+Test Cases/Account/02 Test Add Watchlist,,,2018-12-11 16:53:13,2018-12-11 16:53:14,1.118s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:13,2018-12-11 16:53:13,0.008s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:13,2018-12-11 16:53:14,0.486s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Add Watchlist),,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.011s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.009s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID))",,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.002s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.002s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.001s,PASSED
+"Statement - body = groovy.json.JsonOutput.toJson([media_type:movie, media_id:13, watchlist:true])",,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.008s,PASSED
+Statement - reqObj.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(body)),,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.002s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.187s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Add Watchlist"")",,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.002s,PASSED
+,,,,,,
+Test Cases/Account/03 Test Get Created List,,,2018-12-11 16:53:14,2018-12-11 16:53:15,0.947s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:14,2018-12-11 16:53:14,0.001s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:14,2018-12-11 16:53:15,0.454s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Created List),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.009s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.001s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.000s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.000s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.001s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.001s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.134s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Created List"")",,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.007s,PASSED
+,,,,,,
+Test Cases/Account/04 Test Get Details,,,2018-12-11 16:53:15,2018-12-11 16:53:16,0.839s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.001s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.445s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Details),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.007s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.000s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.000s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.001s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.000s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:15,2018-12-11 16:53:15,0.001s,PASSED
+Statement - resp1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:15,2018-12-11 16:53:16,0.138s,PASSED
+"Statement - common.printDataValue(resp1, ""Account/Get Details"")",,,2018-12-11 16:53:16,2018-12-11 16:53:16,0.002s,PASSED
+,,,,,,
+Test Cases/Account/05 Test Get Favorite Movies,,,2018-12-11 16:53:16,2018-12-11 16:53:17,1.777s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:16,2018-12-11 16:53:16,0.001s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:16,2018-12-11 16:53:17,1.165s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Favorite Movies),,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.020s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.002s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.001s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.001s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.001s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.003s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.302s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Favorite Movies"")",,,2018-12-11 16:53:17,2018-12-11 16:53:17,0.013s,PASSED
+,,,,,,
+Test Cases/Account/06 Test Get Rated TV Episodes,,,2018-12-11 16:53:17,2018-12-11 16:53:19,1.449s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:18,2018-12-11 16:53:18,0.001s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:18,2018-12-11 16:53:19,0.616s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Rated TV Episodes),,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.005s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.001s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.000s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.000s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.001s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.001s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.152s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Rated TV Episodes"")",,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.001s,PASSED
+,,,,,,
+Test Cases/Account/07 Test Get Rated TV Shows,,,2018-12-11 16:53:19,2018-12-11 16:53:20,0.930s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:19,2018-12-11 16:53:19,0.000s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:19,2018-12-11 16:53:20,0.447s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Rated TV Shows),,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.007s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.000s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.000s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.001s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.001s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.001s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.152s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Rated TV Shows"")",,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.002s,PASSED
+,,,,,,
+Test Cases/Account/08 Test Get Watchlist Movies,,,2018-12-11 16:53:20,2018-12-11 16:53:21,0.903s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:20,2018-12-11 16:53:20,0.001s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:20,2018-12-11 16:53:21,0.489s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Watchlist Movies),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.008s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.000s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.000s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.001s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.000s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.000s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.133s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Watchlist Movies"")",,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.003s,PASSED
+,,,,,,
+Test Cases/Account/09 Test Get Watchlist TV Shows,,,2018-12-11 16:53:21,2018-12-11 16:53:22,0.896s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.000s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.481s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Watchlist TV Shows),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.006s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.001s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.001s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.001s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.001s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:21,2018-12-11 16:53:21,0.000s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:21,2018-12-11 16:53:22,0.145s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Watchlist TV Shows"")",,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.001s,PASSED
+,,,,,,
+Test Cases/Account/10 Test Mark as Favorite,,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.864s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.002s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.458s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Make As Favorite),,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.008s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.000s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.000s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.000s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.000s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.001s,PASSED
+"Statement - body = groovy.json.JsonOutput.toJson([media_type:tv, media_id:4629, favorite:true])",,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.000s,PASSED
+Statement - reqObj.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(body)),,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.000s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.153s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Make As Favorite"")",,,2018-12-11 16:53:22,2018-12-11 16:53:22,0.001s,PASSED
+,,,,,,
+Test Cases/Account/11 Test Rated Movies,,,2018-12-11 16:53:22,2018-12-11 16:53:23,0.814s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.001s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.442s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Rated Movies),,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.008s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.001s,PASSED
+"Statement - myURL = myStr.split(""\?"")[0]",,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.001s,PASSED
+"Statement - myURL += ""?api_key="" + apiKey",,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.000s,PASSED
+"Statement - myURL += ""&session_id="" + sessionID",,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.000s,PASSED
+Statement - reqObj.setRestUrl(myURL),,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.001s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.145s,PASSED
+"Statement - common.printDataValue(response1, ""Account/Get Rated Movies"")",,,2018-12-11 16:53:23,2018-12-11 16:53:23,0.001s,PASSED

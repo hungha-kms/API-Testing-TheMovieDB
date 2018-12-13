@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TV Show 04 Get TV On Air and" time="4" tests="3" failures="0" errors="0">
+   <testsuite name="TV Show 04 Get TV On Air and" tests="3" failures="0" errors="0" time="4" timestamp="2018-12-11 11:15:46" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/TV Show/TV Show 04 Get TV On Air and">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\TV Show\\TV Show 04 Get TV On Air and\\20181211_111543"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\TV Show\\TV Show 04 Get TV On Air and\\20181211_111543\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/TV Shows/15 Get TV Airing Today then Get Keywords" classname="Test Cases/TV Shows/15 Get TV Airing Today then Get Keywords" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:15:46 - [TEST_CASE][PASSED] - Test Cases/TV Shows/15 Get TV Airing Today then Get Keywords: Test Cases/TV Shows/15 Get TV Airing Today then Get Keywords
+
+2018-12-11 11:15:47 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTVAiringToday(): Send request successfully
+
+2018-12-11 11:15:48 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:15:48 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:15:48 - [TEST_STEP][PASSED] - Statement - If (TVID >= 0): null
+
+2018-12-11 11:15:48 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getKeywords(TVID): Send request successfully
+
+2018-12-11 11:15:49 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:15:49 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Keywords"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/16 Get TV On Air then Rate TV Show" classname="Test Cases/TV Shows/16 Get TV On Air then Rate TV Show" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:15:49 - [TEST_CASE][PASSED] - Test Cases/TV Shows/16 Get TV On Air then Rate TV Show: Test Cases/TV Shows/16 Get TV On Air then Rate TV Show
+
+2018-12-11 11:15:49 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTVOnTheAir(): Send request successfully
+
+2018-12-11 11:15:49 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:15:49 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:15:49 - [TEST_STEP][PASSED] - Statement - If (TVID >= 0): null
+
+2018-12-11 11:15:49 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.rateTVShow(TVID, 8.5): Send request successfully
+
+2018-12-11 11:15:50 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:15:50 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Rate TV Show"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/17 Get TV On Air then Delete Rating" classname="Test Cases/TV Shows/17 Get TV On Air then Delete Rating" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:15:50 - [TEST_CASE][PASSED] - Test Cases/TV Shows/17 Get TV On Air then Delete Rating: Test Cases/TV Shows/17 Get TV On Air then Delete Rating
+
+2018-12-11 11:15:50 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTVOnTheAir(): Send request successfully
+
+2018-12-11 11:15:50 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:15:50 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:15:50 - [TEST_STEP][PASSED] - Statement - If (TVID >= 0): null
+
+2018-12-11 11:15:50 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.deleteRating(TVID): Send request successfully
+
+2018-12-11 11:15:50 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:15:50 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Rate TV Show"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-11 11:15:46 - [TEST_SUITE][PASSED] - TV Show 04 Get TV On Air and: Test Cases/TV Shows/17 Get TV On Air then Delete Rating]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

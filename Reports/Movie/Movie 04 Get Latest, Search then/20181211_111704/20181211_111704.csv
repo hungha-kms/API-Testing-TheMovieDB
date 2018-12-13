@@ -1,0 +1,43 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+"Movie 04 Get Latest, Search then",,,2018-12-11 11:17:07,2018-12-11 11:17:14,6.706s,PASSED
+,,,,,,
+Test Cases/Movie/10 Get Latest then Get Credits,,,2018-12-11 11:17:07,2018-12-11 11:17:09,2.168s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Latest)),,,2018-12-11 11:17:08,2018-12-11 11:17:09,1.402s,PASSED
+Statement - slurper = new groovy.json.JsonSlurper(),,,2018-12-11 11:17:09,2018-12-11 11:17:09,0.043s,PASSED
+Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()),,,2018-12-11 11:17:09,2018-12-11 11:17:09,0.034s,PASSED
+Statement - movieID = id,,,2018-12-11 11:17:09,2018-12-11 11:17:09,0.007s,PASSED
+Statement - response1 = theMovieDB.Movie.getCredits(movieID),,,2018-12-11 11:17:09,2018-12-11 11:17:09,0.191s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Movies/Get Credits"")",,,2018-12-11 11:17:09,2018-12-11 11:17:09,0.045s,PASSED
+,,,,,,
+Test Cases/Movie/11 SearchMoviesThenGetDetails,,,2018-12-11 11:17:09,2018-12-11 11:17:10,0.887s,PASSED
+"Statement - response1 = theMovieDB.Movie.getDetails(theMovieDB.Search.getRandomMovieAterSearching(""query=1&year=2018""))",,,2018-12-11 11:17:10,2018-12-11 11:17:10,0.370s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Movie Get Details"")",,,2018-12-11 11:17:10,2018-12-11 11:17:10,0.007s,PASSED
+,,,,,,
+Test Cases/Movie/18 Get Upcoming Get Release Dates,,,2018-12-11 11:17:10,2018-12-11 11:17:11,0.733s,PASSED
+Statement - response1 = theMovieDB.Movie.getUpComing(),,,2018-12-11 11:17:11,2018-12-11 11:17:11,0.163s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:17:11,2018-12-11 11:17:11,0.003s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:17:11,2018-12-11 11:17:11,0.187s,PASSED
+,,,,,,
+Test Cases/Movie/19 Get Latest Get Keywords,,,2018-12-11 11:17:11,2018-12-11 11:17:12,0.592s,PASSED
+Statement - response1 = theMovieDB.Movie.getlatest(),,,2018-12-11 11:17:11,2018-12-11 11:17:12,0.156s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Movies/Get Latest"")",,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.005s,PASSED
+Statement - slurper = new groovy.json.JsonSlurper(),,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.000s,PASSED
+Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()),,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.005s,PASSED
+Statement - movieID = id,,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.000s,PASSED
+Statement - response1 = theMovieDB.Movie.getKeywords(movieID),,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.139s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Movies/Rate Movie"")",,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.002s,PASSED
+,,,,,,
+Test Cases/Movie/20 Get Top Rated Get Videos,,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.633s,PASSED
+Statement - response1 = theMovieDB.Movie.getTopRated(),,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.167s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.010s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:17:12,2018-12-11 11:17:12,0.135s,PASSED
+,,,,,,
+Test Cases/Movie/21 Get Top Rated Get Recommendations,,,2018-12-11 11:17:12,2018-12-11 11:17:13,0.588s,PASSED
+Statement - response1 = theMovieDB.Movie.getTopRated(),,,2018-12-11 11:17:13,2018-12-11 11:17:13,0.164s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:17:13,2018-12-11 11:17:13,0.001s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:17:13,2018-12-11 11:17:13,0.166s,PASSED
+,,,,,,
+Test Cases/Movie/22 Get Top Rated Delete Rating,,,2018-12-11 11:17:13,2018-12-11 11:17:14,0.599s,PASSED
+Statement - response1 = theMovieDB.Movie.getTopRated(),,,2018-12-11 11:17:13,2018-12-11 11:17:13,0.153s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:17:13,2018-12-11 11:17:13,0.001s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:17:13,2018-12-11 11:17:14,0.184s,PASSED

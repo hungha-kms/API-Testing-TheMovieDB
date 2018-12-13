@@ -19,12 +19,11 @@ import theMovieDB.Movie
 import theMovieDB.TheMovieDBCommon
 
 response1 = WS.sendRequest(findTestObject('Movies/Get Latest'))
+def slurper = new groovy.json.JsonSlurper()
+def dataValue = slurper.parseText(response1.getResponseBodyContent())
 
-int movieID = Movie.getRandomMovie(response1)
+int movieID = dataValue.id
 
-if (movieID != -1) {
+response1 = Movie.getCredits(movieID)
 
-	response1 = Movie.getCredits(movieID)
-
-	TheMovieDBCommon.printDataValue(response1, 'Movies/Get Credits')
-}
+TheMovieDBCommon.printDataValue(response1, 'Movies/Get Credits')

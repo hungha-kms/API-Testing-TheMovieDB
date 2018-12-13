@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TV Show 02 Get Top Rated and,,,2018-12-11 11:16:27,2018-12-11 11:16:34,6.667s,PASSED
+,,,,,,
+Test Cases/TV Shows/07 Get Top Rated then Get Reviews then Get Details,,,2018-12-11 11:16:28,2018-12-11 11:16:30,2.366s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTopRated(),,,2018-12-11 11:16:28,2018-12-11 11:16:30,1.496s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-11 11:16:30,2018-12-11 11:16:30,0.084s,PASSED
+Statement - If (TVID != -1),,,2018-12-11 11:16:30,2018-12-11 11:16:30,0.328s,PASSED
+,,,,,,
+Test Cases/TV Shows/08 Get Top Rated then Get Similar TV Show,,,2018-12-11 11:16:30,2018-12-11 11:16:31,0.938s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTopRated(),,,2018-12-11 11:16:31,2018-12-11 11:16:31,0.177s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-11 11:16:31,2018-12-11 11:16:31,0.002s,PASSED
+Statement - If (TVID != -1),,,2018-12-11 11:16:31,2018-12-11 11:16:31,0.219s,PASSED
+,,,,,,
+Test Cases/TV Shows/09 Get Top Rated then Get Screened Theatrically,,,2018-12-11 11:16:31,2018-12-11 11:16:32,0.696s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTopRated(),,,2018-12-11 11:16:31,2018-12-11 11:16:32,0.192s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-11 11:16:32,2018-12-11 11:16:32,0.002s,PASSED
+Statement - If (TVID != -1),,,2018-12-11 11:16:32,2018-12-11 11:16:32,0.135s,PASSED
+,,,,,,
+Test Cases/TV Shows/10 Get Top Rated then Get Recommendations,,,2018-12-11 11:16:32,2018-12-11 11:16:32,0.638s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTopRated(),,,2018-12-11 11:16:32,2018-12-11 11:16:32,0.170s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-11 11:16:32,2018-12-11 11:16:32,0.004s,PASSED
+Statement - If (TVID != -1),,,2018-12-11 11:16:32,2018-12-11 11:16:32,0.180s,PASSED
+,,,,,,
+Test Cases/TV Shows/11 Get Top Rated then Get Videos,,,2018-12-11 11:16:32,2018-12-11 11:16:33,0.900s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTopRated(),,,2018-12-11 11:16:33,2018-12-11 11:16:33,0.148s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-11 11:16:33,2018-12-11 11:16:33,0.002s,PASSED
+Statement - If (TVID != -1),,,2018-12-11 11:16:33,2018-12-11 11:16:33,0.143s,PASSED
+,,,,,,
+Test Cases/TV Shows/12 Get Top Rated then Get Translations,,,2018-12-11 11:16:33,2018-12-11 11:16:34,0.641s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTopRated(),,,2018-12-11 11:16:34,2018-12-11 11:16:34,0.149s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-11 11:16:34,2018-12-11 11:16:34,0.002s,PASSED
+Statement - If (TVID != -1),,,2018-12-11 11:16:34,2018-12-11 11:16:34,0.141s,PASSED

@@ -1,0 +1,878 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE log SYSTEM "logger.dtd">
+<log>
+<record>
+  <date>2018-12-11T11:12:25</date>
+  <millis>1544544745815</millis>
+  <sequence>0</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startSuite</method>
+  <thread>1</thread>
+  <message>Start Test Suite : Test Suites/Movie/Movie 01 Get Now Play then</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="name">Movie 01 Get Now Play then</property>
+  <property name="description"></property>
+  <property name="id">Test Suites/Movie/Movie 01 Get Now Play then</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:25</date>
+  <millis>1544544745849</millis>
+  <sequence>1</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Logging run data &amp;apos;hostName&amp;apos; with value &amp;apos;hatha - DESKTOP-EG6P0UN.attlocal.net&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostName">hatha - DESKTOP-EG6P0UN.attlocal.net</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:25</date>
+  <millis>1544544745850</millis>
+  <sequence>2</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Logging run data &amp;apos;os&amp;apos; with value &amp;apos;Windows 10 64bit&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="os">Windows 10 64bit</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:25</date>
+  <millis>1544544745850</millis>
+  <sequence>3</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Logging run data &amp;apos;hostAddress&amp;apos; with value &amp;apos;192.168.1.80&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="hostAddress">192.168.1.80</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:25</date>
+  <millis>1544544745851</millis>
+  <sequence>4</sequence>
+  <level>RUN_DATA</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Logging run data &amp;apos;katalonVersion&amp;apos; with value &amp;apos;5.8.5.1&amp;apos;</message>
+  <nestedLevel>0</nestedLevel>
+  <property name="katalonVersion">5.8.5.1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:26</date>
+  <millis>1544544746239</millis>
+  <sequence>5</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Movie/01 Get Now Playing Get Changes</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Movie/01 Get Now Playing Get Changes</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Movie/01 Get Now Playing Get Changes</property>
+  <property name="source">C:\\Training\\API Testing\\APITestingTheMovieDB\\Test Cases\\Movie\\01 Get Now Playing Get Changes.tc</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:26</date>
+  <millis>1544544746274</millis>
+  <sequence>6</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Evaluating variables for test case</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:26</date>
+  <millis>1544544746741</millis>
+  <sequence>7</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - response1 = theMovieDB.Movie.getNowPlay()</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">22</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:26</date>
+  <millis>1544544746770</millis>
+  <sequence>8</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding Test Object with id &amp;apos;Object Repository/Movies/Get Now Playing&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:26</date>
+  <millis>1544544746866</millis>
+  <sequence>9</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Checking request object</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748239</millis>
+  <sequence>10</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748240</millis>
+  <sequence>11</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - response1 = theMovieDB.Movie.getNowPlay()</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748241</millis>
+  <sequence>12</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - movieID = theMovieDB.Movie.getRandomMovie(response1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">24</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748327</millis>
+  <sequence>13</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - movieID = theMovieDB.Movie.getRandomMovie(response1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748333</millis>
+  <sequence>14</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - If (movieID != -1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">26</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748336</millis>
+  <sequence>15</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - response1 = theMovieDB.Movie.getChanges(movieID)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">27</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748339</millis>
+  <sequence>16</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding Test Object with id &amp;apos;Object Repository/Movies/Get Changes&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748408</millis>
+  <sequence>17</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Checking request object</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748575</millis>
+  <sequence>18</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748581</millis>
+  <sequence>19</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - response1 = theMovieDB.Movie.getChanges(movieID)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748585</millis>
+  <sequence>20</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, \&amp;quot;Movies/Get Changes\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">28</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748663</millis>
+  <sequence>21</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, \&amp;quot;Movies/Get Changes\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748664</millis>
+  <sequence>22</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - If (movieID != -1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748664</millis>
+  <sequence>23</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Movie/01 Get Now Playing Get Changes</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748665</millis>
+  <sequence>24</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Movie/01 Get Now Playing Get Changes</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748672</millis>
+  <sequence>25</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Movie/02 Get Now Playing Get Alternative Titles</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Movie/02 Get Now Playing Get Alternative Titles</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Movie/02 Get Now Playing Get Alternative Titles</property>
+  <property name="source">C:\\Training\\API Testing\\APITestingTheMovieDB\\Test Cases\\Movie\\02 Get Now Playing Get Alternative Titles.tc</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:28</date>
+  <millis>1544544748685</millis>
+  <sequence>26</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Evaluating variables for test case</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749103</millis>
+  <sequence>27</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">22</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749104</millis>
+  <sequence>28</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding Test Object with id &amp;apos;Object Repository/Movies/Get Now Playing&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749116</millis>
+  <sequence>29</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Checking request object</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749303</millis>
+  <sequence>30</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749303</millis>
+  <sequence>31</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749304</millis>
+  <sequence>32</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - movieID = theMovieDB.Movie.getRandomMovie(response1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">24</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749307</millis>
+  <sequence>33</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - movieID = theMovieDB.Movie.getRandomMovie(response1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749307</millis>
+  <sequence>34</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - If (movieID != -1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">26</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749309</millis>
+  <sequence>35</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - response1 = theMovieDB.Movie.getAlternativeTitles(movieID)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">27</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749312</millis>
+  <sequence>36</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding Test Object with id &amp;apos;Object Repository/Movies/Get Alternative Titles&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749320</millis>
+  <sequence>37</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Checking request object</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749450</millis>
+  <sequence>38</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749450</millis>
+  <sequence>39</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - response1 = theMovieDB.Movie.getAlternativeTitles(movieID)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749454</millis>
+  <sequence>40</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, \&amp;quot;Movies/Get Alternative Titles\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">28</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749456</millis>
+  <sequence>41</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, \&amp;quot;Movies/Get Alternative Titles\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749457</millis>
+  <sequence>42</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - If (movieID != -1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749463</millis>
+  <sequence>43</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Movie/02 Get Now Playing Get Alternative Titles</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749464</millis>
+  <sequence>44</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Movie/02 Get Now Playing Get Alternative Titles</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749469</millis>
+  <sequence>45</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startTest</method>
+  <thread>1</thread>
+  <message>Start Test Case : Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="name">Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details</property>
+  <property name="description"></property>
+  <property name="id">Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details</property>
+  <property name="source">C:\\Training\\API Testing\\APITestingTheMovieDB\\Test Cases\\Movie\\03 Get Now Playing Get Reviews then Get Review Details.tc</property>
+  <property name="isOptional">false</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749479</millis>
+  <sequence>46</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Evaluating variables for test case</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749823</millis>
+  <sequence>47</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing))</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">22</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749824</millis>
+  <sequence>48</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding Test Object with id &amp;apos;Object Repository/Movies/Get Now Playing&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:29</date>
+  <millis>1544544749835</millis>
+  <sequence>49</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Checking request object</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750000</millis>
+  <sequence>50</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750001</millis>
+  <sequence>51</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing))</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750002</millis>
+  <sequence>52</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - movieID = theMovieDB.Movie.getRandomMovie(response1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">24</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750015</millis>
+  <sequence>53</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - movieID = theMovieDB.Movie.getRandomMovie(response1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750016</millis>
+  <sequence>54</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - If (movieID != -1)</message>
+  <nestedLevel>1</nestedLevel>
+  <property name="startLine">26</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750017</millis>
+  <sequence>55</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - response1 = theMovieDB.Movie.getReviews(movieID)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">27</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750018</millis>
+  <sequence>56</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Finding Test Object with id &amp;apos;Object Repository/Movies/Get Reviews&amp;apos;</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750028</millis>
+  <sequence>57</sequence>
+  <level>INFO</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Checking request object</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750188</millis>
+  <sequence>58</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Send request successfully</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750188</millis>
+  <sequence>59</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - response1 = theMovieDB.Movie.getReviews(movieID)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750189</millis>
+  <sequence>60</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, \&amp;quot;Movies/Get Reviews\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">28</property>
+  <property name="stepIndex">2</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750191</millis>
+  <sequence>61</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, \&amp;quot;Movies/Get Reviews\&amp;quot;)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750191</millis>
+  <sequence>62</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - reviewID = theMovieDB.Movie.getRandomReview(response1)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">30</property>
+  <property name="stepIndex">3</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750196</millis>
+  <sequence>63</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - reviewID = theMovieDB.Movie.getRandomReview(response1)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750196</millis>
+  <sequence>64</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - If (reviewID != null)</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">32</property>
+  <property name="stepIndex">4</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750197</millis>
+  <sequence>65</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - If (reviewID != null)</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750198</millis>
+  <sequence>66</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - Else</message>
+  <nestedLevel>2</nestedLevel>
+  <property name="startLine">37</property>
+  <property name="stepIndex">5</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750198</millis>
+  <sequence>67</sequence>
+  <level>START</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>startKeyword</method>
+  <thread>1</thread>
+  <message>Start action : Statement - println(\&amp;quot;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp; No review &amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\&amp;quot;)</message>
+  <nestedLevel>3</nestedLevel>
+  <property name="startLine">38</property>
+  <property name="stepIndex">1</property>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750202</millis>
+  <sequence>68</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - println(\&amp;quot;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp; No review &amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;&amp;amp;\&amp;quot;)</message>
+  <nestedLevel>3</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750203</millis>
+  <sequence>69</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - Else</message>
+  <nestedLevel>2</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750203</millis>
+  <sequence>70</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endKeyword</method>
+  <thread>1</thread>
+  <message>End action : Statement - If (movieID != -1)</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750204</millis>
+  <sequence>71</sequence>
+  <level>PASSED</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>logMessage</method>
+  <thread>1</thread>
+  <message>Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details</message>
+  <nestedLevel>1</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750204</millis>
+  <sequence>72</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endTest</method>
+  <thread>1</thread>
+  <message>End Test Case : Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+<record>
+  <date>2018-12-11T11:12:30</date>
+  <millis>1544544750257</millis>
+  <sequence>73</sequence>
+  <level>END</level>
+  <class>com.kms.katalon.core.logging.KeywordLogger</class>
+  <method>endSuite</method>
+  <thread>1</thread>
+  <message>End Test Suite : Test Suites/Movie/Movie 01 Get Now Play then</message>
+  <nestedLevel>0</nestedLevel>
+</record>
+</log>

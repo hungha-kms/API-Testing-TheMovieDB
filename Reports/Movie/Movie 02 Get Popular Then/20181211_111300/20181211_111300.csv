@@ -1,0 +1,37 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Movie 02 Get Popular Then,,,2018-12-11 11:13:03,2018-12-11 11:13:11,7.595s,PASSED
+,,,,,,
+Test Cases/Movie/04 Get Popular Get Changes,,,2018-12-11 11:13:04,2018-12-11 11:13:06,2.258s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-11 11:13:04,2018-12-11 11:13:06,1.437s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:13:06,2018-12-11 11:13:06,0.100s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:13:06,2018-12-11 11:13:06,0.277s,PASSED
+,,,,,,
+Test Cases/Movie/05 Get Popular Get Alternative Titles,,,2018-12-11 11:13:06,2018-12-11 11:13:07,0.760s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-11 11:13:06,2018-12-11 11:13:07,0.190s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:13:07,2018-12-11 11:13:07,0.003s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:13:07,2018-12-11 11:13:07,0.158s,PASSED
+,,,,,,
+Test Cases/Movie/06 Get Popular Get Account States,,,2018-12-11 11:13:07,2018-12-11 11:13:07,0.620s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-11 11:13:07,2018-12-11 11:13:07,0.156s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:13:07,2018-12-11 11:13:07,0.005s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:13:07,2018-12-11 11:13:07,0.136s,PASSED
+,,,,,,
+Test Cases/Movie/07 Get Popular Get Credits then Get Credit Details,,,2018-12-11 11:13:07,2018-12-11 11:13:08,0.759s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-11 11:13:08,2018-12-11 11:13:08,0.143s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:13:08,2018-12-11 11:13:08,0.003s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:13:08,2018-12-11 11:13:08,0.369s,PASSED
+,,,,,,
+Test Cases/Movie/08 Get Popular Get Details,,,2018-12-11 11:13:08,2018-12-11 11:13:09,0.577s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-11 11:13:08,2018-12-11 11:13:09,0.185s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:13:09,2018-12-11 11:13:09,0.001s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:13:09,2018-12-11 11:13:09,0.169s,PASSED
+,,,,,,
+Test Cases/Movie/09 Get Popular Get Lists then Get List Details,,,2018-12-11 11:13:09,2018-12-11 11:13:10,1.138s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-11 11:13:09,2018-12-11 11:13:09,0.162s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:13:09,2018-12-11 11:13:09,0.003s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:13:09,2018-12-11 11:13:10,0.697s,PASSED
+,,,,,,
+Test Cases/Movie/09 Get Popular Get Reviews then Get Review Details,,,2018-12-11 11:13:10,2018-12-11 11:13:11,0.806s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Popular)),,,2018-12-11 11:13:10,2018-12-11 11:13:11,0.149s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-11 11:13:11,2018-12-11 11:13:11,0.000s,PASSED
+Statement - If (movieID != -1),,,2018-12-11 11:13:11,2018-12-11 11:13:11,0.324s,PASSED

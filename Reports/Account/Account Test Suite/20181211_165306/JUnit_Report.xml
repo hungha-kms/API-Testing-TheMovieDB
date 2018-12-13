@@ -1,0 +1,378 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Account Test Suite" time="13" tests="11" failures="0" errors="0">
+   <testsuite name="Account Test Suite" tests="11" failures="0" errors="0" time="13" timestamp="2018-12-11 16:53:09" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Account/Account Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Account\\Account Test Suite\\20181211_165306"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Account\\Account Test Suite\\20181211_165306\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Account/01 Get Favorite TV Shows" classname="Test Cases/Account/01 Get Favorite TV Shows" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:10 - [TEST_CASE][PASSED] - Test Cases/Account/01 Get Favorite TV Shows: Test Cases/Account/01 Get Favorite TV Shows
+
+2018-12-11 16:53:11 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:11 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:12 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:12 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:12 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:12 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Favorite TV Shows): Finding Test Object with id 'Object Repository/Account/Get Favorite TV Shows'
+
+2018-12-11 16:53:12 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:12 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:13 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:13 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:13 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:13 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:13 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Favorite TV Shows"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/02 Test Add Watchlist" classname="Test Cases/Account/02 Test Add Watchlist" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:13 - [TEST_CASE][PASSED] - Test Cases/Account/02 Test Add Watchlist: Test Cases/Account/02 Test Add Watchlist
+
+2018-12-11 16:53:13 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:13 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Add Watchlist): Finding Test Object with id 'Object Repository/Account/Add Watchlist'
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID)): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - body = groovy.json.JsonOutput.toJson([media_type:movie, media_id:13, watchlist:true]): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - reqObj.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(body)): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Add Watchlist"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/03 Test Get Created List" classname="Test Cases/Account/03 Test Get Created List" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:14 - [TEST_CASE][PASSED] - Test Cases/Account/03 Test Get Created List: Test Cases/Account/03 Test Get Created List
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:14 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Created List): Finding Test Object with id 'Object Repository/Account/Get Created List'
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Created List"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/04 Test Get Details" classname="Test Cases/Account/04 Test Get Details" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:15 - [TEST_CASE][PASSED] - Test Cases/Account/04 Test Get Details: Test Cases/Account/04 Test Get Details
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Details): Finding Test Object with id 'Object Repository/Account/Get Details'
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:15 - [TEST_STEP][PASSED] - Statement - resp1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:16 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:16 - [TEST_STEP][PASSED] - Statement - common.printDataValue(resp1, "Account/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/05 Test Get Favorite Movies" classname="Test Cases/Account/05 Test Get Favorite Movies" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:16 - [TEST_CASE][PASSED] - Test Cases/Account/05 Test Get Favorite Movies: Test Cases/Account/05 Test Get Favorite Movies
+
+2018-12-11 16:53:16 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:16 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:16 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:17 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:17 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Favorite Movies): Finding Test Object with id 'Object Repository/Account/Get Favorite Movies'
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:17 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:17 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Favorite Movies"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/06 Test Get Rated TV Episodes" classname="Test Cases/Account/06 Test Get Rated TV Episodes" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:17 - [TEST_CASE][PASSED] - Test Cases/Account/06 Test Get Rated TV Episodes: Test Cases/Account/06 Test Get Rated TV Episodes
+
+2018-12-11 16:53:18 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:18 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:18 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Rated TV Episodes): Finding Test Object with id 'Object Repository/Account/Get Rated TV Episodes'
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Rated TV Episodes"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/07 Test Get Rated TV Shows" classname="Test Cases/Account/07 Test Get Rated TV Shows" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:19 - [TEST_CASE][PASSED] - Test Cases/Account/07 Test Get Rated TV Shows: Test Cases/Account/07 Test Get Rated TV Shows
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:19 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Rated TV Shows): Finding Test Object with id 'Object Repository/Account/Get Rated TV Shows'
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Rated TV Shows"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/08 Test Get Watchlist Movies" classname="Test Cases/Account/08 Test Get Watchlist Movies" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:20 - [TEST_CASE][PASSED] - Test Cases/Account/08 Test Get Watchlist Movies: Test Cases/Account/08 Test Get Watchlist Movies
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:20 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Watchlist Movies): Finding Test Object with id 'Object Repository/Account/Get Watchlist Movies'
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Watchlist Movies"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/09 Test Get Watchlist TV Shows" classname="Test Cases/Account/09 Test Get Watchlist TV Shows" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:21 - [TEST_CASE][PASSED] - Test Cases/Account/09 Test Get Watchlist TV Shows: Test Cases/Account/09 Test Get Watchlist TV Shows
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Watchlist TV Shows): Finding Test Object with id 'Object Repository/Account/Get Watchlist TV Shows'
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:21 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Watchlist TV Shows"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/10 Test Mark as Favorite" classname="Test Cases/Account/10 Test Mark as Favorite" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:22 - [TEST_CASE][PASSED] - Test Cases/Account/10 Test Mark as Favorite: Test Cases/Account/10 Test Mark as Favorite
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Make As Favorite): Finding Test Object with id 'Object Repository/Account/Make As Favorite'
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - body = groovy.json.JsonOutput.toJson([media_type:tv, media_id:4629, favorite:true]): null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - reqObj.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(body)): null
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:22 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Make As Favorite"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Account/11 Test Rated Movies" classname="Test Cases/Account/11 Test Rated Movies" status="PASSED">
+         <system-out><![CDATA[2018-12-11 16:53:22 - [TEST_CASE][PASSED] - Test Cases/Account/11 Test Rated Movies: Test Cases/Account/11 Test Rated Movies
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-11 16:53:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Account/Get Rated Movies): Finding Test Object with id 'Object Repository/Account/Get Rated Movies'
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - myURL = myStr.split("\?")[0]: null
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - myURL += "?api_key=" + apiKey: null
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - myURL += "&session_id=" + sessionID: null
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(myURL): null
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-11 16:53:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 16:53:23 - [TEST_STEP][PASSED] - Statement - common.printDataValue(response1, "Account/Get Rated Movies"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-11 16:53:09 - [TEST_SUITE][PASSED] - Account Test Suite: Test Cases/Account/11 Test Rated Movies]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

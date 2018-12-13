@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TV Show 03 Get Latest and,,,2018-12-11 11:09:43,2018-12-11 11:09:47,3.909s,PASSED
+,,,,,,
+Test Cases/TV Shows/13 Get Latest then Get External IDs,,,2018-12-11 11:09:44,2018-12-11 11:09:46,2.233s,PASSED
+Statement - response1 = theMovieDB.TVShow.getLatest(),,,2018-12-11 11:09:44,2018-12-11 11:09:46,1.385s,PASSED
+Statement - slurper = new groovy.json.JsonSlurper(),,,2018-12-11 11:09:46,2018-12-11 11:09:46,0.039s,PASSED
+Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()),,,2018-12-11 11:09:46,2018-12-11 11:09:46,0.032s,PASSED
+Statement - TVID = id,,,2018-12-11 11:09:46,2018-12-11 11:09:46,0.009s,PASSED
+Statement - If (TVID >= 0),,,2018-12-11 11:09:46,2018-12-11 11:09:46,0.271s,PASSED
+,,,,,,
+Test Cases/TV Shows/14 Get Latest then Get Images,,,2018-12-11 11:09:46,2018-12-11 11:09:47,1.125s,PASSED
+Statement - response1 = theMovieDB.TVShow.getTVAiringToday(),,,2018-12-11 11:09:47,2018-12-11 11:09:47,0.174s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-11 11:09:47,2018-12-11 11:09:47,0.021s,PASSED
+Statement - If (TVID >= 0),,,2018-12-11 11:09:47,2018-12-11 11:09:47,0.150s,PASSED

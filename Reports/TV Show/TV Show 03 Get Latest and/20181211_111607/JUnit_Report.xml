@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="TV Show 03 Get Latest and" time="3" tests="2" failures="0" errors="0">
+   <testsuite name="TV Show 03 Get Latest and" tests="2" failures="0" errors="0" time="3" timestamp="2018-12-11 11:16:10" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/TV Show/TV Show 03 Get Latest and">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\TV Show\\TV Show 03 Get Latest and\\20181211_111607"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\TV Show\\TV Show 03 Get Latest and\\20181211_111607\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/TV Shows/13 Get Latest then Get External IDs" classname="Test Cases/TV Shows/13 Get Latest then Get External IDs" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:11 - [TEST_CASE][PASSED] - Test Cases/TV Shows/13 Get Latest then Get External IDs: Test Cases/TV Shows/13 Get Latest then Get External IDs
+
+2018-12-11 11:16:11 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getLatest(): Send request successfully
+
+2018-12-11 11:16:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:13 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-11 11:16:13 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-11 11:16:13 - [TEST_STEP][PASSED] - Statement - TVID = id: null
+
+2018-12-11 11:16:13 - [TEST_STEP][PASSED] - Statement - If (TVID >= 0): null
+
+2018-12-11 11:16:13 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getExternalIDs(TVID): Send request successfully
+
+2018-12-11 11:16:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:13 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get External IDs"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/TV Shows/14 Get Latest then Get Images" classname="Test Cases/TV Shows/14 Get Latest then Get Images" status="PASSED">
+         <system-out><![CDATA[2018-12-11 11:16:13 - [TEST_CASE][PASSED] - Test Cases/TV Shows/14 Get Latest then Get Images: Test Cases/TV Shows/14 Get Latest then Get Images
+
+2018-12-11 11:16:14 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getTVAiringToday(): Send request successfully
+
+2018-12-11 11:16:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:14 - [TEST_STEP][PASSED] - Statement - TVID = theMovieDB.TVShow.getRandomTV(response1): null
+
+2018-12-11 11:16:14 - [TEST_STEP][PASSED] - Statement - If (TVID >= 0): null
+
+2018-12-11 11:16:14 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.TVShow.getKeywords(TVID): Send request successfully
+
+2018-12-11 11:16:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-11 11:16:14 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "TV/Get Keywords"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-11 11:16:10 - [TEST_SUITE][PASSED] - TV Show 03 Get Latest and: Test Cases/TV Shows/14 Get Latest then Get Images]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

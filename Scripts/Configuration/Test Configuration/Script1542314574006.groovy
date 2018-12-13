@@ -12,23 +12,29 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
-import theMovieDB.TheMovieDBCommon
+import theMovieDB.TheMovieDBCommon as TheMovieDBCommon
 
 response1 = WS.sendRequest(findTestObject('Configuration/Get API Configuration'))
-TheMovieDBCommon.printDataValue(response1, "Configuration/Get API Configuration")
+
+TheMovieDBCommon.printDataValue(response1, 'Configuration/Get API Configuration')
 
 response1 = WS.sendRequest(findTestObject('Configuration/Get Countries'))
-TheMovieDBCommon.printDataValue(response1, "Configuration/Get Countries")
+
+TheMovieDBCommon.printDataValue(response1, 'Configuration/Get Countries')
 
 response1 = WS.sendRequest(findTestObject('Configuration/Get Jobs'))
-TheMovieDBCommon.printDataValue(response1, "Configuration/Get Jobs")
+
+TheMovieDBCommon.printDataValue(response1, 'Configuration/Get Jobs')
 
 response1 = WS.sendRequest(findTestObject('Configuration/Get Languages'))
-TheMovieDBCommon.printDataValue(response1, "Configuration/Get Languages")
+
+TheMovieDBCommon.printDataValue(response1, 'Configuration/Get Languages')
 
 response1 = WS.sendRequest(findTestObject('Configuration/Get Primary Translations'))
-TheMovieDBCommon.printDataValue(response1, "Configuration/Get Primary Translations")
+
+TheMovieDBCommon.printDataValue(response1, 'Configuration/Get Primary Translations')
 
 response1 = WS.sendRequest(findTestObject('Configuration/Get Timezones'))
-TheMovieDBCommon.printDataValue(response1, "Configuration/Get Timezones")
+
+TheMovieDBCommon.printDataValue(response1, 'Configuration/Get Timezones')
 

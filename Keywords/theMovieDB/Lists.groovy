@@ -52,7 +52,7 @@ public class Lists {
 
 		return WS.sendRequest(reqObj)
 	}
-	
+
 	public static ResponseObject checkItemStatus(int listID, int movieID){
 		RequestObject reqObj = findTestObject('List/Check Item Status')
 		String urlStr = "https://api.themoviedb.org/3/list/" + listID + "/item_status"

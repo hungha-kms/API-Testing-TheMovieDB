@@ -4,6 +4,7 @@ import static com.kms.katalon.core.checkpoint.CheckpointFactory.findCheckpoint
 import static com.kms.katalon.core.testcase.TestCaseFactory.findTestCase
 import static com.kms.katalon.core.testdata.TestDataFactory.findTestData
 import static com.kms.katalon.core.testobject.ObjectRepository.findTestObject
+import static groovy.json.JsonOutput.toJson
 
 import com.kms.katalon.core.testobject.impl.HttpTextBodyContent
 import com.kms.katalon.core.annotation.Keyword
@@ -30,6 +31,7 @@ public class TVShow {
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
+		params.add(new TestObjectProperty('guest_session_id', ConditionType.EQUALS, GlobalVariable.guestSessionID))
 		reqObj.setRestParameters(params)
 		return WS.sendRequest(reqObj)
 	}
@@ -74,6 +76,16 @@ public class TVShow {
 		return WS.sendRequest(reqObj)
 	}
 
+	public static ResponseObject getDetails(int id){
+		RequestObject reqObj = findTestObject('TV/Get Details')
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + id
+		reqObj.setRestUrl(urlStr)
+		List<TestObjectProperty> params = new ArrayList()
+		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
+		reqObj.setRestParameters(params)
+		return WS.sendRequest(reqObj)
+	}
+
 
 	public static ResponseObject getCredits(int id){
 		RequestObject reqObj = findTestObject('TV/Get Credits')
@@ -87,8 +99,9 @@ public class TVShow {
 
 	public static ResponseObject getEpisodeGroups(int id){
 		RequestObject reqObj = findTestObject('TV/Get Episode Groups')
-		String urlStr = 'https://api.themoviedb.org/3/TV/' + id
-		reqObj.setRestUrl(urlStr)
+		String urlStr = 'https://api.themoviedb.org/3/TV/' + id + '/episode_groups'
+		println (urlStr)
+		//reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
 		reqObj.setRestParameters(params)
@@ -125,7 +138,7 @@ public class TVShow {
 		return WS.sendRequest(reqObj)
 	}
 
-	public static ResponseObject getlatest(){
+	public static ResponseObject getLatest(){
 		return WS.sendRequest(findTestObject('TV/Get Latest'))
 	}
 
@@ -205,12 +218,13 @@ public class TVShow {
 		return WS.sendRequest(reqObj)
 	}
 
-	public static ResponseObject RateTVShow(int id, float rating){
+	public static ResponseObject rateTVShow(int id, float rating){
 		RequestObject reqObj = findTestObject('TV/Rate TV Show')
 		String urlStr = 'https://api.themoviedb.org/3/movie/' + id + '/rating'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
+		params.add(new TestObjectProperty('guest_session_id', ConditionType.EQUALS, GlobalVariable.guestSessionID))
 		reqObj.setRestParameters(params)
 
 		String body = toJson(value: rating)
@@ -218,9 +232,9 @@ public class TVShow {
 
 		return WS.sendRequest(reqObj)
 	}
-	
+
 	//Return -1 if getting no movie
-	public static int getRandomMovie(ResponseObject resObj){
+	public static int getRandomTV(ResponseObject resObj){
 		def slurper = new groovy.json.JsonSlurper()
 		def dataValue = slurper.parseText(resObj.getResponseBodyContent())
 
@@ -268,5 +282,21 @@ public class TVShow {
 			return dataValue.cast[i].credit_id
 		}
 		return null
+	}
+
+	//Return 0 for no season
+	public static int getRandomSeason(ResponseObject resObj){
+		def slurper = new groovy.json.JsonSlurper()
+		def dataValue = slurper.parseText(resObj.getResponseBodyContent())
+
+		int resultSize = dataValue.number_of_seasons
+
+		if (resultSize > 0) {
+			int i = ((Math.random() * resultSize) as int)
+			if (i == 0)
+				i = 1
+			return i
+		}
+		return 1
 	}
 }
