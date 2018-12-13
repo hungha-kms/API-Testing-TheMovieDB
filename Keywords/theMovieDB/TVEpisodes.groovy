@@ -26,7 +26,7 @@ import internal.GlobalVariable
 public class TVEpisodes {
 	public static ResponseObject deleteRating(int TVID, int seasonNo, int episodeNo){
 		RequestObject reqObj = findTestObject('TV Episodes/Delete Rating')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo +'/rating'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo +'/rating'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
@@ -36,7 +36,7 @@ public class TVEpisodes {
 
 	public static ResponseObject getAccountStates(int TVID, int seasonNo, int episodeNo){
 		RequestObject reqObj = findTestObject('TV Episodes/Get Account States')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo + '/account_states'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo + '/account_states'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
@@ -57,7 +57,7 @@ public class TVEpisodes {
 
 	public static ResponseObject getCredits(int TVID, int seasonNo, int episodeNo){
 		RequestObject reqObj = findTestObject('TV Episodes/Get Credits')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo + '/credits'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo + '/credits'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
@@ -78,7 +78,7 @@ public class TVEpisodes {
 
 	public static ResponseObject getExternalIDs(int TVID, int seasonNo, int episodeNo){
 		RequestObject reqObj = findTestObject('TV Episodes/Get External IDs')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo + '/external_ids'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo + '/external_ids'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
@@ -88,7 +88,7 @@ public class TVEpisodes {
 
 	public static ResponseObject getImages(int TVID, int seasonNo, int episodeNo){
 		RequestObject reqObj = findTestObject('TV Episodes/Get Images')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo + '/images'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo + '/images'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
@@ -99,7 +99,7 @@ public class TVEpisodes {
 
 	public static ResponseObject getTranslations(int TVID, int seasonNo, int episodeNo){
 		RequestObject reqObj = findTestObject('TV Episodes/Get Translations')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo + '/translations'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo + '/translations'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
@@ -109,7 +109,7 @@ public class TVEpisodes {
 
 	public static ResponseObject getVideos(int TVID, int seasonNo, int episodeNo){
 		RequestObject reqObj = findTestObject('TV Episodes/Get Videos')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo + '/videos'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo + '/videos'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
@@ -119,7 +119,7 @@ public class TVEpisodes {
 
 	public static ResponseObject rateTVEpisode(int TVID, int seasonNo, int episodeNo, float rating){
 		RequestObject reqObj = findTestObject('TV Episodes/Rate TV Episode')
-		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season'+ seasonNo +'/episode' + episodeNo + '/rating'
+		String urlStr = 'https://api.themoviedb.org/3/tv/' + TVID + '/season/'+ seasonNo +'/episode/' + episodeNo + '/rating'
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
