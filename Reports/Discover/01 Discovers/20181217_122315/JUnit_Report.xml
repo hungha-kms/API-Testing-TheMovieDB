@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="01 Discovers" time="5" tests="6" failures="0" errors="0">
+   <testsuite name="01 Discovers" tests="6" failures="0" errors="0" time="5" timestamp="2018-12-17 12:23:17" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Discover/01 Discovers">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Discover\\01 Discovers\\20181217_122315"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Discover\\01 Discovers\\20181217_122315\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Discover/01 Test Brad Pitt and Edward Norton ever been in a movie together" classname="Test Cases/Discover/01 Test Brad Pitt and Edward Norton ever been in a movie together" status="PASSED">
+         <system-out><![CDATA[2018-12-17 12:23:18 - [TEST_CASE][PASSED] - Test Cases/Discover/01 Test Brad Pitt and Edward Norton ever been in a movie together: Test Cases/Discover/01 Test Brad Pitt and Edward Norton ever been in a movie together
+
+2018-12-17 12:23:18 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover): Finding Test Object with id 'Object Repository/Discover/Movie Discover'
+
+2018-12-17 12:23:18 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-17 12:23:18 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-17 12:23:18 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_people, com.kms.katalon.core.testobject.ConditionType.EQUALS, 287,819)): null
+
+2018-12-17 12:23:18 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc)): null
+
+2018-12-17 12:23:18 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-17 12:23:18 - [TEST_STEP][PASSED] - Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-17 12:23:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-17 12:23:20 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, "Have Brad Pitt and Edward Norton ever been in a movie together"): null
+
+2018-12-17 12:23:20 - [TEST_STEP][PASSED] - verifyElementPropertyValue: Verify element property value successfully
+
+2018-12-17 12:23:20 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Discover/02 Test The Best Drama" classname="Test Cases/Discover/02 Test The Best Drama" status="PASSED">
+         <system-out><![CDATA[2018-12-17 12:23:20 - [TEST_CASE][PASSED] - Test Cases/Discover/02 Test The Best Drama: Test Cases/Discover/02 Test The Best Drama
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover): Finding Test Object with id 'Object Repository/Discover/Movie Discover'
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_people, com.kms.katalon.core.testobject.ConditionType.EQUALS, 287, 819)): null
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc)): null
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - myStr = reqObj.getRestUrl(): null
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-17 12:23:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Discover/Movie Discover"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Discover/03 Test TV Discover" classname="Test Cases/Discover/03 Test TV Discover" status="PASSED">
+         <system-out><![CDATA[2018-12-17 12:23:21 - [TEST_CASE][PASSED] - Test Cases/Discover/03 Test TV Discover: Test Cases/Discover/03 Test TV Discover
+
+2018-12-17 12:23:21 - [TEST_STEP][PASSED] - sendRequest: Send request successfully
+
+2018-12-17 12:23:21 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Discover/04 Test what movies are in theatres" classname="Test Cases/Discover/04 Test what movies are in theatres" status="PASSED">
+         <system-out><![CDATA[2018-12-17 12:23:21 - [TEST_CASE][PASSED] - Test Cases/Discover/04 Test what movies are in theatres: Test Cases/Discover/04 Test what movies are in theatres
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover): Finding Test Object with id 'Object Repository/Discover/Movie Discover'
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_date.gte, com.kms.katalon.core.testobject.ConditionType.EQUALS, 2018-12-01)): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_date.lte, com.kms.katalon.core.testobject.ConditionType.EQUALS, 2018-12-17)): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-17 12:23:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue: Verify element property value successfully
+
+2018-12-17 12:23:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, "What movies are in theatres"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Discover/05 Test What are the most popular movies" classname="Test Cases/Discover/05 Test What are the most popular movies" status="PASSED">
+         <system-out><![CDATA[2018-12-17 12:23:22 - [TEST_CASE][PASSED] - Test Cases/Discover/05 Test What are the most popular movies: Test Cases/Discover/05 Test What are the most popular movies
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover): Finding Test Object with id 'Object Repository/Discover/Movie Discover'
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, popularity.desc)): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-17 12:23:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - verifyElementPropertyValue: Verify element property value successfully
+
+2018-12-17 12:23:22 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-17 12:23:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, "What are the most popular movies"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Discover/06 Test What are the most popular kids movies" classname="Test Cases/Discover/06 Test What are the most popular kids movies" status="PASSED">
+         <system-out><![CDATA[2018-12-17 12:23:22 - [TEST_CASE][PASSED] - Test Cases/Discover/06 Test What are the most popular kids movies: Test Cases/Discover/06 Test What are the most popular kids movies
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover): Finding Test Object with id 'Object Repository/Discover/Movie Discover'
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_year, com.kms.katalon.core.testobject.ConditionType.EQUALS, US)): null
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(certification.lte, com.kms.katalon.core.testobject.ConditionType.EQUALS, G)): null
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, popularity.desc)): null
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-17 12:23:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, "What are the most popular kids movies"): null
+
+2018-12-17 12:23:23 - [TEST_STEP][PASSED] - verifyElementPropertyValue: Verify element property value successfully
+
+2018-12-17 12:23:23 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-17 12:23:17 - [TEST_SUITE][PASSED] - 01 Discovers: Test Cases/Discover/06 Test What are the most popular kids movies]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>
