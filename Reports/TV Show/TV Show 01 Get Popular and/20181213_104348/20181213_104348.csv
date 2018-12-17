@@ -1,0 +1,32 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+TV Show 01 Get Popular and,,,2018-12-13 10:43:51,2018-12-13 10:43:58,6.821s,PASSED
+,,,,,,
+Test Cases/TV Shows/01 Get Popular Get Credits then Get Credit Details,,,2018-12-13 10:43:51,2018-12-13 10:43:54,2.721s,PASSED
+Statement - response1 = theMovieDB.TVShow.getPopular(),,,2018-12-13 10:43:52,2018-12-13 10:43:53,1.445s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-13 10:43:53,2018-12-13 10:43:53,0.092s,PASSED
+Statement - If (TVID != -1),,,2018-12-13 10:43:53,2018-12-13 10:43:54,0.650s,PASSED
+,,,,,,
+Test Cases/TV Shows/02 Get Popular Get Changes,,,2018-12-13 10:43:54,2018-12-13 10:43:55,0.894s,PASSED
+Statement - response1 = theMovieDB.TVShow.getPopular(),,,2018-12-13 10:43:54,2018-12-13 10:43:55,0.243s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-13 10:43:55,2018-12-13 10:43:55,0.023s,PASSED
+Statement - If (TVID != -1),,,2018-12-13 10:43:55,2018-12-13 10:43:55,0.199s,PASSED
+,,,,,,
+Test Cases/TV Shows/03 Get Popular Get Alternative Titles,,,2018-12-13 10:43:55,2018-12-13 10:43:56,0.746s,PASSED
+Statement - response1 = theMovieDB.TVShow.getPopular(),,,2018-12-13 10:43:55,2018-12-13 10:43:55,0.215s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-13 10:43:55,2018-12-13 10:43:55,0.014s,PASSED
+Statement - If (TVID != -1),,,2018-12-13 10:43:55,2018-12-13 10:43:56,0.185s,PASSED
+,,,,,,
+Test Cases/TV Shows/04 Get Popular Get Details,,,2018-12-13 10:43:56,2018-12-13 10:43:56,0.659s,PASSED
+Statement - response1 = theMovieDB.TVShow.getPopular(),,,2018-12-13 10:43:56,2018-12-13 10:43:56,0.190s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-13 10:43:56,2018-12-13 10:43:56,0.001s,PASSED
+Statement - If (TVID != -1),,,2018-12-13 10:43:56,2018-12-13 10:43:56,0.166s,PASSED
+,,,,,,
+Test Cases/TV Shows/05 Get Popular Get Account States,,,2018-12-13 10:43:56,2018-12-13 10:43:57,0.608s,PASSED
+Statement - response1 = theMovieDB.TVShow.getPopular(),,,2018-12-13 10:43:57,2018-12-13 10:43:57,0.172s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-13 10:43:57,2018-12-13 10:43:57,0.008s,PASSED
+Statement - If (TVID != -1),,,2018-12-13 10:43:57,2018-12-13 10:43:57,0.146s,PASSED
+,,,,,,
+Test Cases/TV Shows/06 Get Popular Get Get Episode Groups Then Get Details,,,2018-12-13 10:43:57,2018-12-13 10:43:58,0.622s,PASSED
+Statement - response1 = theMovieDB.TVShow.getPopular(),,,2018-12-13 10:43:57,2018-12-13 10:43:57,0.165s,PASSED
+Statement - TVID = theMovieDB.TVShow.getRandomTV(response1),,,2018-12-13 10:43:57,2018-12-13 10:43:57,0.005s,PASSED
+Statement - If (TVID != -1),,,2018-12-13 10:43:57,2018-12-13 10:43:58,0.168s,PASSED

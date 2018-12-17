@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Test TV Discover</name>
+   <name>07 Get Popular then Get Changes</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>81a3249e-8e37-4a8f-86a1-300335b6d392</testCaseGuid>
+   <testCaseGuid>77f359a1-2081-4446-bd4c-e18312740a91</testCaseGuid>
 </TestCaseEntity>

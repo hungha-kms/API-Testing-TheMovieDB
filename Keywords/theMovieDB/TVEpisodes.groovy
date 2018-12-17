@@ -40,7 +40,9 @@ public class TVEpisodes {
 		reqObj.setRestUrl(urlStr)
 		List<TestObjectProperty> params = new ArrayList()
 		params.add(new TestObjectProperty('api_key', ConditionType.EQUALS, GlobalVariable.apiKey))
-		params.add(new TestObjectProperty('guest_session_id', ConditionType.EQUALS, GlobalVariable.guestSessionID))
+		TheMovieDBCommon common = new TheMovieDBCommon()
+		String sessionID = common.getSessionID()
+		params.add(new TestObjectProperty('session_id', ConditionType.EQUALS, sessionID))
 		reqObj.setRestParameters(params)
 		return WS.sendRequest(reqObj)
 	}

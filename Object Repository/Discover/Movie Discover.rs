@@ -30,6 +30,7 @@ import internal.GlobalVariable as GlobalVariable
 RequestObject request = WSResponseManager.getInstance().getCurrentRequest()
 
 ResponseObject response = WSResponseManager.getInstance().getCurrentResponse()
-</verificationScript>
+
+WS.verifyElementPropertyValue(response, 'results[1].video', false)</verificationScript>
    <wsdlAddress></wsdlAddress>
 </WebServiceRequestEntity>

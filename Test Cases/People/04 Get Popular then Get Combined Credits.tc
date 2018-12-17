@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <TestCaseEntity>
    <description></description>
-   <name>Test The Best Drama</name>
+   <name>04 Get Popular then Get Combined Credits</name>
    <tag></tag>
    <comment></comment>
-   <testCaseGuid>5e4aaf86-e927-470d-ac00-16aad565b436</testCaseGuid>
+   <testCaseGuid>8f3acb97-1c39-4d2a-898c-cfb84650f1b7</testCaseGuid>
 </TestCaseEntity>

@@ -1,0 +1,72 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+People Test Suite,,,2018-12-14 15:57:11,2018-12-14 15:57:22,11.547s,PASSED
+,,,,,,
+Test Cases/People/01 Get Popular Get Review Details,,,2018-12-14 15:57:11,2018-12-14 15:57:14,2.683s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:12,2018-12-14 15:57:13,1.723s,PASSED
+Statement - response1 = theMovieDB.People.getRandomReview(response1),,,2018-12-14 15:57:13,2018-12-14 15:57:14,0.247s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Movies/TV/ Get Reviews"")",,,2018-12-14 15:57:14,2018-12-14 15:57:14,0.085s,PASSED
+Statement - slurper = new groovy.json.JsonSlurper(),,,2018-12-14 15:57:14,2018-12-14 15:57:14,0.002s,PASSED
+Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()),,,2018-12-14 15:57:14,2018-12-14 15:57:14,0.003s,PASSED
+Statement - resultSize = results.size() - 1,,,2018-12-14 15:57:14,2018-12-14 15:57:14,0.006s,PASSED
+Statement - If (resultSize >= 0),,,2018-12-14 15:57:14,2018-12-14 15:57:14,0.002s,PASSED
+Statement - Else,,,2018-12-14 15:57:14,2018-12-14 15:57:14,0.016s,PASSED
+,,,,,,
+Test Cases/People/02 Get Popular Get Movie Credit Details,,,2018-12-14 15:57:14,2018-12-14 15:57:15,1.400s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:14,2018-12-14 15:57:15,0.260s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:15,2018-12-14 15:57:15,0.008s,PASSED
+Statement - response1 = theMovieDB.People.getMovieCredits(personID),,,2018-12-14 15:57:15,2018-12-14 15:57:15,0.189s,PASSED
+Statement - If (response1 != null),,,2018-12-14 15:57:15,2018-12-14 15:57:15,0.211s,PASSED
+,,,,,,
+Test Cases/People/03 Get Popular Get TV Credit Details,,,2018-12-14 15:57:15,2018-12-14 15:57:16,1.002s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:15,2018-12-14 15:57:16,0.242s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:16,2018-12-14 15:57:16,0.004s,PASSED
+Statement - response1 = theMovieDB.People.getTVCredits(personID),,,2018-12-14 15:57:16,2018-12-14 15:57:16,0.163s,PASSED
+Statement - If (response1 != null),,,2018-12-14 15:57:16,2018-12-14 15:57:16,0.226s,PASSED
+,,,,,,
+Test Cases/People/04 Get Popular then Get Combined Credits,,,2018-12-14 15:57:16,2018-12-14 15:57:17,1.040s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:16,2018-12-14 15:57:17,0.239s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:17,2018-12-14 15:57:17,0.002s,PASSED
+Statement - response1 = theMovieDB.People.getCombinedCredits(personID),,,2018-12-14 15:57:17,2018-12-14 15:57:17,0.256s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""People/Get Combined Credits"")",,,2018-12-14 15:57:17,2018-12-14 15:57:17,0.042s,PASSED
+Statement - If (response1 != null),,,2018-12-14 15:57:17,2018-12-14 15:57:17,0.206s,PASSED
+,,,,,,
+Test Cases/People/05 Get Popular then Get Translations,,,2018-12-14 15:57:17,2018-12-14 15:57:18,0.673s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:17,2018-12-14 15:57:18,0.213s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:18,2018-12-14 15:57:18,0.004s,PASSED
+Statement - response1 = theMovieDB.People.getTranslations(personID),,,2018-12-14 15:57:18,2018-12-14 15:57:18,0.139s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""People/Get Translations"")",,,2018-12-14 15:57:18,2018-12-14 15:57:18,0.001s,PASSED
+,,,,,,
+Test Cases/People/06 Get Popular then Get Details,,,2018-12-14 15:57:18,2018-12-14 15:57:19,0.742s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:18,2018-12-14 15:57:18,0.213s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:18,2018-12-14 15:57:18,0.006s,PASSED
+Statement - response1 = theMovieDB.People.getDetails(personID),,,2018-12-14 15:57:18,2018-12-14 15:57:19,0.165s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""People/Get Details"")",,,2018-12-14 15:57:19,2018-12-14 15:57:19,0.001s,PASSED
+,,,,,,
+Test Cases/People/07 Get Popular then Get Changes,,,2018-12-14 15:57:19,2018-12-14 15:57:19,0.693s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:19,2018-12-14 15:57:19,0.250s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:19,2018-12-14 15:57:19,0.004s,PASSED
+Statement - response1 = theMovieDB.People.getChanges(personID),,,2018-12-14 15:57:19,2018-12-14 15:57:19,0.165s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""People/Get Changes"")",,,2018-12-14 15:57:19,2018-12-14 15:57:19,0.002s,PASSED
+,,,,,,
+Test Cases/People/08 Get Popular then Get Tagged Images,,,2018-12-14 15:57:19,2018-12-14 15:57:20,0.722s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:20,2018-12-14 15:57:20,0.210s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:20,2018-12-14 15:57:20,0.001s,PASSED
+Statement - response1 = theMovieDB.People.getTaggedImages(personID),,,2018-12-14 15:57:20,2018-12-14 15:57:20,0.134s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""People/Get Tagged Images"")",,,2018-12-14 15:57:20,2018-12-14 15:57:20,0.001s,PASSED
+,,,,,,
+Test Cases/People/09 Get Popular then Get Images,,,2018-12-14 15:57:20,2018-12-14 15:57:21,0.655s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:20,2018-12-14 15:57:20,0.222s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:20,2018-12-14 15:57:20,0.004s,PASSED
+Statement - response1 = theMovieDB.People.getImages(personID),,,2018-12-14 15:57:20,2018-12-14 15:57:21,0.164s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""People/Get Images"")",,,2018-12-14 15:57:21,2018-12-14 15:57:21,0.003s,PASSED
+,,,,,,
+Test Cases/People/10 Get Popular then Get External IDs,,,2018-12-14 15:57:21,2018-12-14 15:57:21,0.628s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:21,2018-12-14 15:57:21,0.206s,PASSED
+Statement - personID = theMovieDB.People.getRandomPerson(response1),,,2018-12-14 15:57:21,2018-12-14 15:57:21,0.002s,PASSED
+Statement - response1 = theMovieDB.People.getExternalIDs(personID),,,2018-12-14 15:57:21,2018-12-14 15:57:21,0.140s,PASSED
+,,,,,,
+Test Cases/People/11 Get Popular then Get TV or Movie Details,,,2018-12-14 15:57:21,2018-12-14 15:57:22,0.683s,PASSED
+Statement - response1 = theMovieDB.People.getPopular(),,,2018-12-14 15:57:22,2018-12-14 15:57:22,0.222s,PASSED
+Statement - data = theMovieDB.People.getRandomMediaID(response1),,,2018-12-14 15:57:22,2018-12-14 15:57:22,0.013s,PASSED
+Statement - If (isMovie),,,2018-12-14 15:57:22,2018-12-14 15:57:22,0.171s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""People/Movie/TV Show/Get Details"")",,,2018-12-14 15:57:22,2018-12-14 15:57:22,0.001s,PASSED

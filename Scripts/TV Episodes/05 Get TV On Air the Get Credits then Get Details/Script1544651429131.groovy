@@ -19,6 +19,7 @@ import internal.GlobalVariable as GlobalVariable
 import theMovieDB.Credits
 import theMovieDB.Movie
 import theMovieDB.Reviews
+import theMovieDB.TVEpisodes
 import theMovieDB.TVSeasons
 import theMovieDB.TVShow
 import theMovieDB.TheMovieDBCommon as TheMovieDBCommon
@@ -28,9 +29,11 @@ ResponseObject response1 = TVShow.getTVOnTheAir()
 int TVID = TVShow.getRandomTV(response1)
 response1 = TVShow.getDetails(TVID)
 int seasonNo = TVShow.getRandomSeason(response1)
-response1 = TVSeasons.getCredits(TVID, seasonNo)
+response1 = TVSeasons.getDetails(TVID, seasonNo)
+int episodeNo = TVSeasons.getRandomEpisodeNo(response1)
+response1 = TVEpisodes.getCredits(TVID, seasonNo, episodeNo)
 String creditID = TVShow.getRandomCredit(response1)
 response1 = Credits.getDetails(creditID)
 
-TheMovieDBCommon.printDataValue(response1, 'TV Seasons/Get Credits Details for TVID: '+ TVID + "; season Number: "+ seasonNo + "; credit ID: " + creditID)
-
+String tittleStr = 'TV Episodes/Get Credits Details for TVID: '+ TVID + "; season Number: " + seasonNo + "; Episode Number: " +episodeNo
+TheMovieDBCommon.printDataValue(response1, tittleStr)

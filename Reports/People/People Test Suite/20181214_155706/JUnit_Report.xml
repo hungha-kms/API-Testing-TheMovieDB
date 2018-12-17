@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="People Test Suite" time="11" tests="11" failures="0" errors="0">
+   <testsuite name="People Test Suite" tests="11" failures="0" errors="0" time="11" timestamp="2018-12-14 15:57:11" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/People/People Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\People\\People Test Suite\\20181214_155706"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\People\\People Test Suite\\20181214_155706\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/People/01 Get Popular Get Review Details" classname="Test Cases/People/01 Get Popular Get Review Details" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:11 - [TEST_CASE][PASSED] - Test Cases/People/01 Get Popular Get Review Details: Test Cases/People/01 Get Popular Get Review Details
+
+2018-12-14 15:57:12 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:13 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getRandomReview(response1): Send request successfully
+
+2018-12-14 15:57:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Movies/TV/ Get Reviews"): null
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - resultSize = results.size() - 1: null
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - If (resultSize >= 0): null
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - Else: null
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - println("&&&&&&&&& No review &&&&&&&&&&&&"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/02 Get Popular Get Movie Credit Details" classname="Test Cases/People/02 Get Popular Get Movie Credit Details" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:14 - [TEST_CASE][PASSED] - Test Cases/People/02 Get Popular Get Movie Credit Details: Test Cases/People/02 Get Popular Get Movie Credit Details
+
+2018-12-14 15:57:14 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getMovieCredits(personID): Send request successfully
+
+2018-12-14 15:57:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - If (response1 != null): null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - resultSize = -1: null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - If (response1.getStatusCode() == 200): null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - resultSize = cast.size() - 1: null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - If (resultSize >= 0): null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - i = java.lang.Math.random() * resultSize: null
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Credits.getDetails(credit_id): Send request successfully
+
+2018-12-14 15:57:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Credits/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/03 Get Popular Get TV Credit Details" classname="Test Cases/People/03 Get Popular Get TV Credit Details" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:15 - [TEST_CASE][PASSED] - Test Cases/People/03 Get Popular Get TV Credit Details: Test Cases/People/03 Get Popular Get TV Credit Details
+
+2018-12-14 15:57:15 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:16 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getTVCredits(personID): Send request successfully
+
+2018-12-14 15:57:16 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - If (response1 != null): null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - resultSize = -1: null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - If (response1.getStatusCode() == 200): null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - resultSize = cast.size() - 1: null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - If (resultSize >= 0): null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - i = java.lang.Math.random() * resultSize: null
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Credits.getDetails(credit_id): Send request successfully
+
+2018-12-14 15:57:16 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Credits/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/04 Get Popular then Get Combined Credits" classname="Test Cases/People/04 Get Popular then Get Combined Credits" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:16 - [TEST_CASE][PASSED] - Test Cases/People/04 Get Popular then Get Combined Credits: Test Cases/People/04 Get Popular then Get Combined Credits
+
+2018-12-14 15:57:16 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:17 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getCombinedCredits(personID): Send request successfully
+
+2018-12-14 15:57:17 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "People/Get Combined Credits"): null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - If (response1 != null): null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - resultSize = -1: null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - If (response1.getStatusCode() == 200): null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - resultSize = cast.size() - 1: null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - If (resultSize >= 0): null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - i = java.lang.Math.random() * resultSize: null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - creditID = credit_id: null
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Credits.getDetails(creditID): Send request successfully
+
+2018-12-14 15:57:17 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Credits/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/05 Get Popular then Get Translations" classname="Test Cases/People/05 Get Popular then Get Translations" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:17 - [TEST_CASE][PASSED] - Test Cases/People/05 Get Popular then Get Translations: Test Cases/People/05 Get Popular then Get Translations
+
+2018-12-14 15:57:17 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:18 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:18 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:18 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getTranslations(personID): Send request successfully
+
+2018-12-14 15:57:18 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:18 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "People/Get Translations"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/06 Get Popular then Get Details" classname="Test Cases/People/06 Get Popular then Get Details" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:18 - [TEST_CASE][PASSED] - Test Cases/People/06 Get Popular then Get Details: Test Cases/People/06 Get Popular then Get Details
+
+2018-12-14 15:57:18 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:18 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:18 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:18 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getDetails(personID): Send request successfully
+
+2018-12-14 15:57:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:19 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "People/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/07 Get Popular then Get Changes" classname="Test Cases/People/07 Get Popular then Get Changes" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:19 - [TEST_CASE][PASSED] - Test Cases/People/07 Get Popular then Get Changes: Test Cases/People/07 Get Popular then Get Changes
+
+2018-12-14 15:57:19 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:19 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:19 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getChanges(personID): Send request successfully
+
+2018-12-14 15:57:19 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:19 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "People/Get Changes"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/08 Get Popular then Get Tagged Images" classname="Test Cases/People/08 Get Popular then Get Tagged Images" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:19 - [TEST_CASE][PASSED] - Test Cases/People/08 Get Popular then Get Tagged Images: Test Cases/People/08 Get Popular then Get Tagged Images
+
+2018-12-14 15:57:20 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:20 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:20 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getTaggedImages(personID): Send request successfully
+
+2018-12-14 15:57:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:20 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "People/Get Tagged Images"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/09 Get Popular then Get Images" classname="Test Cases/People/09 Get Popular then Get Images" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:20 - [TEST_CASE][PASSED] - Test Cases/People/09 Get Popular then Get Images: Test Cases/People/09 Get Popular then Get Images
+
+2018-12-14 15:57:20 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:20 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:20 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getImages(personID): Send request successfully
+
+2018-12-14 15:57:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:21 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "People/Get Images"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/10 Get Popular then Get External IDs" classname="Test Cases/People/10 Get Popular then Get External IDs" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:21 - [TEST_CASE][PASSED] - Test Cases/People/10 Get Popular then Get External IDs: Test Cases/People/10 Get Popular then Get External IDs
+
+2018-12-14 15:57:21 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:21 - [TEST_STEP][PASSED] - Statement - personID = theMovieDB.People.getRandomPerson(response1): null
+
+2018-12-14 15:57:21 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getExternalIDs(personID): Send request successfully
+
+2018-12-14 15:57:21 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/People/11 Get Popular then Get TV or Movie Details" classname="Test Cases/People/11 Get Popular then Get TV or Movie Details" status="PASSED">
+         <system-out><![CDATA[2018-12-14 15:57:21 - [TEST_CASE][PASSED] - Test Cases/People/11 Get Popular then Get TV or Movie Details: Test Cases/People/11 Get Popular then Get TV or Movie Details
+
+2018-12-14 15:57:22 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.People.getPopular(): Send request successfully
+
+2018-12-14 15:57:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:22 - [TEST_STEP][PASSED] - Statement - data = theMovieDB.People.getRandomMediaID(response1): null
+
+2018-12-14 15:57:22 - [TEST_STEP][PASSED] - Statement - If (isMovie): Send request successfully
+
+2018-12-14 15:57:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-14 15:57:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "People/Movie/TV Show/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-14 15:57:11 - [TEST_SUITE][PASSED] - People Test Suite: Test Cases/People/11 Get Popular then Get TV or Movie Details]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

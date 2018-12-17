@@ -12,8 +12,11 @@ import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
 import com.kms.katalon.core.webui.keyword.WebUiBuiltInKeywords as WebUI
 import internal.GlobalVariable as GlobalVariable
+import theMovieDB.TheMovieDBCommon
 
-WS.sendRequest(findTestObject('Certifications/Get Movie Certifications'))
+respond1 = WS.sendRequest(findTestObject('Certifications/Get Movie Certifications'))
 
-WS.sendRequest(findTestObject('Certifications/Get TV Certifications'))
+TheMovieDBCommon.printDataValue(respond1, "Certifications/Get Movie Certifications")
+
+respond1 = WS.sendRequest(findTestObject('Certifications/Get TV Certifications'))
 

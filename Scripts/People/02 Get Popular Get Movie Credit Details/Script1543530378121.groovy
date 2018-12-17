@@ -10,6 +10,7 @@ import com.kms.katalon.core.testcase.TestCase as TestCase
 import com.kms.katalon.core.testdata.TestData as TestData
 import com.kms.katalon.core.testobject.ConditionType as ConditionType
 import com.kms.katalon.core.testobject.RequestObject as RequestObject
+import com.kms.katalon.core.testobject.ResponseObject
 import com.kms.katalon.core.testobject.TestObject as TestObject
 import com.kms.katalon.core.testobject.TestObjectProperty as TestObjectProperty
 import com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords as WS
@@ -20,22 +21,15 @@ import theMovieDB.Movie
 import theMovieDB.People
 import theMovieDB.TheMovieDBCommon as TheMovieDBCommon
 
-response1 = WS.sendRequest(findTestObject('People/Get Popular'))
+ResponseObject response1 = People.getPopular()
+int personID = People.getRandomPerson(response1)
+response1 = People.getMovieCredits(personID)
 
-def slurper = new groovy.json.JsonSlurper()
-
-def dataValue = slurper.parseText(response1.getResponseBodyContent())
-
-int resultSize = dataValue.results.size() - 1
-
-if (resultSize >= 0) {
-    int i = ((Math.random() * resultSize) as int)
-
-    response1 = People.getMovieCredits(dataValue.results[i].id)
-   	resultSize = -1
+if (response1 != null) {
+   	int resultSize = -1
 	
 	if (response1.getStatusCode() == 200){
-
+		def slurper = new groovy.json.JsonSlurper()
 		dataValue = slurper.parseText(response1.getResponseBodyContent())
 
 		resultSize = (dataValue.cast.size() - 1)
@@ -47,10 +41,10 @@ if (resultSize >= 0) {
         TheMovieDBCommon.printDataValue(response1, 'Credits/Get Details')
 		
     }else{
-	println ("&&&&&&&&& No Credit &&&&&&&&&&&&")
+		println ("&&&&&&&&& No Credit &&&&&&&&&&&&")
     }
 }else{
-	println ("&&&&&&&&& No Popular &&&&&&&&&&&&")
+	println ("&&&&&&&&& No Movie Credit &&&&&&&&&&&&")
 }
 
 
