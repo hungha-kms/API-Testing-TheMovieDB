@@ -27,6 +27,7 @@ String myStr = reqObj.getRestUrl()
 String myURL = myStr.split("\\?")[0]
 myURL += "?api_key=" + GlobalVariable.apiKey
 myURL += "&session_id=" + sessionID
+//myURL += "&guest_session_id=" + GlobalVariable.guestSessionID
 
 reqObj.setRestUrl(myURL)
 

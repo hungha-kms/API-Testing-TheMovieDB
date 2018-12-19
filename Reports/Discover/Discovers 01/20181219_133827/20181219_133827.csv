@@ -1,0 +1,59 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Discovers 01,,,2018-12-19 13:38:31,2018-12-19 13:38:41,10.562s,PASSED
+,,,,,,
+Test Cases/Discover/01 Test Brad Pitt and Edward Norton ever been in a movie together,,,2018-12-19 13:38:32,2018-12-19 13:38:36,4.351s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-19 13:38:33,2018-12-19 13:38:33,0.057s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-19 13:38:33,2018-12-19 13:38:33,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-19 13:38:33,2018-12-19 13:38:33,0.037s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_people, com.kms.katalon.core.testobject.ConditionType.EQUALS, 287,819))",,,2018-12-19 13:38:33,2018-12-19 13:38:33,0.005s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc))",,,2018-12-19 13:38:33,2018-12-19 13:38:33,0.007s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-19 13:38:33,2018-12-19 13:38:33,0.036s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-19 13:38:33,2018-12-19 13:38:36,2.708s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""Have Brad Pitt and Edward Norton ever been in a movie together"")",,,2018-12-19 13:38:36,2018-12-19 13:38:36,0.139s,PASSED
+verifyElementPropertyValue,,,2018-12-19 13:38:36,2018-12-19 13:38:36,0.105s,PASSED
+,,,,,,
+Test Cases/Discover/02 Test The Best Drama,,,2018-12-19 13:38:36,2018-12-19 13:38:37,0.803s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.012s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_people, com.kms.katalon.core.testobject.ConditionType.EQUALS, 287, 819))",,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc))",,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.002s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.002s,PASSED
+Statement - myStr = reqObj.getRestUrl(),,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.002s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.154s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Discover/Movie Discover"")",,,2018-12-19 13:38:37,2018-12-19 13:38:37,0.003s,PASSED
+,,,,,,
+Test Cases/Discover/03 Test TV Discover,,,2018-12-19 13:38:37,2018-12-19 13:38:38,0.735s,PASSED
+sendRequest,,,2018-12-19 13:38:38,2018-12-19 13:38:38,0.241s,PASSED
+,,,,,,
+Test Cases/Discover/04 Test what movies are in theatres,,,2018-12-19 13:38:38,2018-12-19 13:38:39,1.583s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.011s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_date.gte, com.kms.katalon.core.testobject.ConditionType.EQUALS, 2018-12-01))",,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.083s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_date.lte, com.kms.katalon.core.testobject.ConditionType.EQUALS, 2018-12-17))",,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.003s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.002s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.223s,PASSED
+verifyElementPropertyValue,,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.029s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What movies are in theatres"")",,,2018-12-19 13:38:39,2018-12-19 13:38:39,0.451s,PASSED
+,,,,,,
+Test Cases/Discover/05 Test What are the most popular movies,,,2018-12-19 13:38:39,2018-12-19 13:38:40,0.811s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.008s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, popularity.desc))",,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.001s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.004s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.182s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What are the most popular movies"")",,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.017s,PASSED
+verifyElementPropertyValue,,,2018-12-19 13:38:40,2018-12-19 13:38:40,0.034s,PASSED
+,,,,,,
+Test Cases/Discover/06 Test What are the most popular kids movies,,,2018-12-19 13:38:40,2018-12-19 13:38:41,0.972s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.007s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_year, com.kms.katalon.core.testobject.ConditionType.EQUALS, US))",,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.003s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(certification.lte, com.kms.katalon.core.testobject.ConditionType.EQUALS, G))",,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, popularity.desc))",,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.001s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.003s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.219s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What are the most popular kids movies"")",,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.033s,PASSED
+verifyElementPropertyValue,,,2018-12-19 13:38:41,2018-12-19 13:38:41,0.067s,PASSED

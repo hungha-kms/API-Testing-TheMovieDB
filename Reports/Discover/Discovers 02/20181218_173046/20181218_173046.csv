@@ -1,0 +1,73 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Discovers 02,,,2018-12-18 17:30:48,2018-12-18 17:30:55,6.827s,FAILED
+,,,,,,
+Test Cases/Discover/07 Test What is are the best movies from 2015,,,2018-12-18 17:30:49,2018-12-18 17:30:51,2.971s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-18 17:30:49,2018-12-18 17:30:50,0.051s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 17:30:50,2018-12-18 17:30:50,0.003s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 17:30:50,2018-12-18 17:30:50,0.069s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_year, com.kms.katalon.core.testobject.ConditionType.EQUALS, 2015))",,,2018-12-18 17:30:50,2018-12-18 17:30:50,0.004s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc))",,,2018-12-18 17:30:50,2018-12-18 17:30:50,0.003s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 17:30:50,2018-12-18 17:30:50,0.030s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 17:30:50,2018-12-18 17:30:51,1.586s,PASSED
+verifyElementPropertyValue,,,2018-12-18 17:30:51,2018-12-18 17:30:51,0.122s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What is are the best movies from 2015"")",,,2018-12-18 17:30:51,2018-12-18 17:30:51,0.100s,PASSED
+,,,,,,
+Test Cases/Discover/08 Test What are the best dramas that were released this year,,,2018-12-18 17:30:51,2018-12-18 17:30:52,0.937s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.006s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(primary_release_year, com.kms.katalon.core.testobject.ConditionType.EQUALS, 2018))",,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.004s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_genres, com.kms.katalon.core.testobject.ConditionType.EQUALS, 18))",,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc))",,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.002s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.004s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.180s,PASSED
+verifyElementPropertyValue,,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.023s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What are the best dramas that were released this year"")",,,2018-12-18 17:30:52,2018-12-18 17:30:52,0.022s,PASSED
+,,,,,,
+Test Cases/Discover/09 Test What are the highest rated science fiction movies that Tom Cruise has been in,,,2018-12-18 17:30:52,2018-12-18 17:30:53,0.601s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.008s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_genres, com.kms.katalon.core.testobject.ConditionType.EQUALS, 878))",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_cast, com.kms.katalon.core.testobject.ConditionType.EQUALS, 500))",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc))",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.005s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.002s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.141s,PASSED
+verifyElementPropertyValue,,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.032s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What are the most popular movies"")",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.003s,PASSED
+,,,,,,
+Test Cases/Discover/10 Test Has David Fincher ever worked with Rooney Mara,,,2018-12-18 17:30:53,2018-12-18 17:30:54,0.504s,FAILED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.006s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_people, com.kms.katalon.core.testobject.ConditionType.EQUALS, 108916,7467))",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, popularity.desc))",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.000s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.001s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.153s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""Has David Fincher ever worked with Rooney Mara"")",,,2018-12-18 17:30:53,2018-12-18 17:30:53,0.002s,PASSED
+verifyElementPropertyValue,,,2018-12-18 17:30:53,2018-12-18 17:30:54,0.030s,FAILED
+,,,,,,
+Test Cases/Discover/11 What are the best drama Movie,,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.633s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.006s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.000s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_genres, com.kms.katalon.core.testobject.ConditionType.EQUALS, 18))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, vote_average.desc))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(vote_count.gte, com.kms.katalon.core.testobject.ConditionType.EQUALS, 10))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.002s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.129s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What are the best drama's"")",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.149s,PASSED
+verifyElementPropertyValue,,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.031s,PASSED
+,,,,,,
+Test Cases/Discover/12 What are Liam Neesons highest grossing rated R movies,,,2018-12-18 17:30:54,2018-12-18 17:30:55,0.536s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Discover/Movie Discover),,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.007s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.000s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(certification_country, com.kms.katalon.core.testobject.ConditionType.EQUALS, US))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.000s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(certification, com.kms.katalon.core.testobject.ConditionType.EQUALS, R))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(sort_by, com.kms.katalon.core.testobject.ConditionType.EQUALS, revenue.desc))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(with_cast, com.kms.katalon.core.testobject.ConditionType.EQUALS, 3896))",,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 17:30:54,2018-12-18 17:30:54,0.001s,PASSED
+Statement - resObj = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 17:30:54,2018-12-18 17:30:55,0.196s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resObj, ""What are Liam Neeson's highest grossing rated 'R' movies"")",,,2018-12-18 17:30:55,2018-12-18 17:30:55,0.009s,PASSED
+verifyElementPropertyValue,,,2018-12-18 17:30:55,2018-12-18 17:30:55,0.018s,PASSED

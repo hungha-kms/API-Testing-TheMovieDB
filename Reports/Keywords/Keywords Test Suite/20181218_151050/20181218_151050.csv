@@ -1,0 +1,26 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Keywords Test Suite,,,2018-12-18 15:10:52,2018-12-18 15:10:57,4.860s,PASSED
+,,,,,,
+Test Cases/Keywords/Test Get Details,,,2018-12-18 15:10:52,2018-12-18 15:10:55,2.784s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Search/Search Keywords)),,,2018-12-18 15:10:53,2018-12-18 15:10:54,1.399s,PASSED
+Statement - slurper = new groovy.json.JsonSlurper(),,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.026s,PASSED
+Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()),,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.034s,PASSED
+Statement - resultSize = results.size() - 1,,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.016s,PASSED
+Statement - keywordID = null,,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.002s,PASSED
+Statement - ro = null,,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.001s,PASSED
+"Statement - body = ""{""dummyRequest"":""yes""}""",,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.002s,PASSED
+"Statement - endpoint = """"",,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.003s,PASSED
+Statement - respObj = null,,,2018-12-18 15:10:54,2018-12-18 15:10:54,0.002s,PASSED
+"Statement - 0.upto(resultSize, { -> ... })",,,2018-12-18 15:10:54,2018-12-18 15:10:55,0.839s,PASSED
+,,,,,,
+Test Cases/Keywords/Test Get Movies,,,2018-12-18 15:10:55,2018-12-18 15:10:57,1.497s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Search/Search Keywords)),,,2018-12-18 15:10:55,2018-12-18 15:10:56,0.153s,PASSED
+Statement - slurper = new groovy.json.JsonSlurper(),,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.001s,PASSED
+Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()),,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.002s,PASSED
+Statement - resultSize = results.size() - 1,,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.001s,PASSED
+Statement - keywordID = null,,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.001s,PASSED
+Statement - ro = null,,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.000s,PASSED
+"Statement - body = ""{""dummyRequest"":""yes""}""",,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.001s,PASSED
+"Statement - endpoint = """"",,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.002s,PASSED
+Statement - respObj = null,,,2018-12-18 15:10:56,2018-12-18 15:10:56,0.001s,PASSED
+"Statement - 0.upto(resultSize, { -> ... })",,,2018-12-18 15:10:56,2018-12-18 15:10:57,0.970s,PASSED

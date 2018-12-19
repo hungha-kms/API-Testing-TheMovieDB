@@ -1,0 +1,16 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Configuration Test Suite,,,2018-12-18 14:42:19,2018-12-18 14:42:23,3.804s,PASSED
+,,,,,,
+Test Cases/Configuration/Test Configuration,,,2018-12-18 14:42:19,2018-12-18 14:42:23,3.219s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get API Configuration)),,,2018-12-18 14:42:20,2018-12-18 14:42:21,1.453s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Configuration/Get API Configuration"")",,,2018-12-18 14:42:21,2018-12-18 14:42:21,0.112s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Countries)),,,2018-12-18 14:42:21,2018-12-18 14:42:22,0.180s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Configuration/Get Countries"")",,,2018-12-18 14:42:22,2018-12-18 14:42:22,0.050s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Jobs)),,,2018-12-18 14:42:22,2018-12-18 14:42:22,0.254s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Configuration/Get Jobs"")",,,2018-12-18 14:42:22,2018-12-18 14:42:22,0.032s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Languages)),,,2018-12-18 14:42:22,2018-12-18 14:42:22,0.172s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Configuration/Get Languages"")",,,2018-12-18 14:42:22,2018-12-18 14:42:22,0.037s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Primary Translations)),,,2018-12-18 14:42:22,2018-12-18 14:42:22,0.192s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Configuration/Get Primary Translations"")",,,2018-12-18 14:42:22,2018-12-18 14:42:22,0.009s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Timezones)),,,2018-12-18 14:42:22,2018-12-18 14:42:23,0.197s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Configuration/Get Timezones"")",,,2018-12-18 14:42:23,2018-12-18 14:42:23,0.034s,PASSED

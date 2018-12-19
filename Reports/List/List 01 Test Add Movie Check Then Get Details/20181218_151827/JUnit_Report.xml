@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="List 01 Test Add Movie Check Then Get Details" time="8" tests="1" failures="0" errors="0">
+   <testsuite name="List 01 Test Add Movie Check Then Get Details" tests="1" failures="0" errors="0" time="8" timestamp="2018-12-18 15:18:29" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/List/List 01 Test Add Movie Check Then Get Details">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\List\\List 01 Test Add Movie Check Then Get Details\\20181218_151827"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\List\\List 01 Test Add Movie Check Then Get Details\\20181218_151827\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/List/Test Add Movie Check Then Get Details" classname="Test Cases/List/Test Add Movie Check Then Get Details" status="PASSED">
+         <system-out><![CDATA[2018-12-18 15:18:30 - [TEST_CASE][PASSED] - Test Cases/List/Test Add Movie Check Then Get Details: Test Cases/List/Test Add Movie Check Then Get Details
+
+2018-12-18 15:18:30 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-18 15:18:30 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-18 15:18:32 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:32 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:32 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Add Movie): Finding Test Object with id 'Object Repository/List/Add Movie'
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID)): null
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - body = null: null
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - response1 = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - movieID = null: null
+
+2018-12-18 15:18:32 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Search/Search Movies)): Send request successfully
+
+2018-12-18 15:18:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:33 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-18 15:18:33 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-18 15:18:33 - [TEST_STEP][PASSED] - Statement - resultSize = results.size() - 1: null
+
+2018-12-18 15:18:33 - [TEST_STEP][PASSED] - Statement - 0.upto(resultSize - 5, { -> ... }): Send request successfully
+
+2018-12-18 15:18:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:33 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:34 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:35 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:35 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:35 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:35 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:35 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Check Item Status): Finding Test Object with id 'Object Repository/List/Check Item Status'
+
+2018-12-18 15:18:35 - [TEST_STEP][PASSED] - Statement - 0.upto(resultSize - 5, { -> ... }): Verify element property value successfully
+
+2018-12-18 15:18:35 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:35 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:35 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:36 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:37 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:38 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:38 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:18:38 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:38 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 15:18:29 - [TEST_SUITE][PASSED] - List 01 Test Add Movie Check Then Get Details: Test Cases/List/Test Add Movie Check Then Get Details]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

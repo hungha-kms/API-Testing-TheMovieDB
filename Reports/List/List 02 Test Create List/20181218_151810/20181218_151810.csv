@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+List 02 Test Create List,,,2018-12-18 15:18:12,2018-12-18 15:18:15,3.383s,PASSED
+,,,,,,
+Test Cases/List/Test Create List,,,2018-12-18 15:18:12,2018-12-18 15:18:15,2.755s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-18 15:18:13,2018-12-18 15:18:13,0.007s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-18 15:18:13,2018-12-18 15:18:15,1.866s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Create List),,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.037s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.018s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID))",,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.003s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.002s,PASSED
+"Statement - body = groovy.json.JsonOutput.toJson([name:Lucas Toe List, description:Lucas is very small boy but he know, language:en])",,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.012s,PASSED
+Statement - reqObj.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(body)),,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.001s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.216s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""List/Create List"")",,,2018-12-18 15:18:15,2018-12-18 15:18:15,0.024s,PASSED

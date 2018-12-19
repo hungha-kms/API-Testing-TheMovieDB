@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Companies Test Suite,,,2018-12-18 14:40:20,2018-12-18 14:40:23,2.949s,PASSED
+,,,,,,
+Test Cases/Companies/Test Get Details Images Translations,,,2018-12-18 14:40:21,2018-12-18 14:40:23,2.381s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Companies/Get Details)),,,2018-12-18 14:40:21,2018-12-18 14:40:23,1.491s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Companies/Get Details"")",,,2018-12-18 14:40:23,2018-12-18 14:40:23,0.100s,PASSED
+Statement - response2 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Companies/Get Altenative Names)),,,2018-12-18 14:40:23,2018-12-18 14:40:23,0.175s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response2, ""Companies/Get Altenative Names"")",,,2018-12-18 14:40:23,2018-12-18 14:40:23,0.002s,PASSED
+Statement - response3 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Companies/Get Images)),,,2018-12-18 14:40:23,2018-12-18 14:40:23,0.175s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response3, ""Companies/Get Images"")",,,2018-12-18 14:40:23,2018-12-18 14:40:23,0.004s,PASSED

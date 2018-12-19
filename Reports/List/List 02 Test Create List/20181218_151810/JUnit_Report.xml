@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="List 02 Test Create List" time="3" tests="1" failures="0" errors="0">
+   <testsuite name="List 02 Test Create List" tests="1" failures="0" errors="0" time="3" timestamp="2018-12-18 15:18:12" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/List/List 02 Test Create List">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\List\\List 02 Test Create List\\20181218_151810"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\List\\List 02 Test Create List\\20181218_151810\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/List/Test Create List" classname="Test Cases/List/Test Create List" status="PASSED">
+         <system-out><![CDATA[2018-12-18 15:18:12 - [TEST_CASE][PASSED] - Test Cases/List/Test Create List: Test Cases/List/Test Create List
+
+2018-12-18 15:18:13 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-18 15:18:13 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-18 15:18:14 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Create List): Finding Test Object with id 'Object Repository/List/Create List'
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID)): null
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - body = groovy.json.JsonOutput.toJson([name:Lucas Toe List, description:Lucas is very small boy but he know, language:en]): null
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - reqObj.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(body)): null
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-18 15:18:15 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:18:15 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "List/Create List"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 15:18:12 - [TEST_SUITE][PASSED] - List 02 Test Create List: Test Cases/List/Test Create List]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

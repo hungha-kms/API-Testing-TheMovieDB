@@ -22,7 +22,7 @@
    </httpHeaderProperties>
    <migratedVersion>5.4.1</migratedVersion>
    <restRequestMethod>POST</restRequestMethod>
-   <restUrl>https://api.themoviedb.org/3/tv/75219/rating?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;guest_session_id=63c7980fa786c1e254b0c5a0feb74467</restUrl>
+   <restUrl>https://api.themoviedb.org/3/tv/75218/rating?api_key=7e5025325ed996a9f5b73d139c82d44b&amp;guest_session_id=63c7980fa786c1e254b0c5a0feb74467</restUrl>
    <serviceType>RESTful</serviceType>
    <soapBody></soapBody>
    <soapHeader></soapHeader>

@@ -31,6 +31,6 @@ ResponseObject resObj = WS.sendRequest(reqObj)
 
 TheMovieDBCommon.printDataValue(resObj, "Has David Fincher ever worked with Rooney Mara")
 
-WS.verifyElementPropertyValue(resObj, 'results[0].title', 'The Social Network')
+WS.verifyElementPropertyValue(resObj, 'results[0].title', 'The Girl with the Dragon Tattoo')
 
 

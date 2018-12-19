@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Certifications Test Suite" time="2" tests="1" failures="0" errors="0">
+   <testsuite name="Certifications Test Suite" tests="1" failures="0" errors="0" time="2" timestamp="2018-12-18 14:35:18" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Certifications/Certifications Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Certifications\\Certifications Test Suite\\20181218_143516"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Certifications\\Certifications Test Suite\\20181218_143516\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Certifications/Test TV and Movies Certifications" classname="Test Cases/Certifications/Test TV and Movies Certifications" status="PASSED">
+         <system-out><![CDATA[2018-12-18 14:35:18 - [TEST_CASE][PASSED] - Test Cases/Certifications/Test TV and Movies Certifications: Test Cases/Certifications/Test TV and Movies Certifications
+
+2018-12-18 14:35:19 - [TEST_STEP][PASSED] - Statement - respond1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Certifications/Get Movie Certifications)): Send request successfully
+
+2018-12-18 14:35:20 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:35:20 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(respond1, "Certifications/Get Movie Certifications"): null
+
+2018-12-18 14:35:20 - [TEST_STEP][PASSED] - Statement - respond1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Certifications/Get TV Certifications)): Send request successfully
+
+2018-12-18 14:35:20 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 14:35:18 - [TEST_SUITE][PASSED] - Certifications Test Suite: Test Cases/Certifications/Test TV and Movies Certifications]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

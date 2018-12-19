@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Find Test Suite" time="2" tests="1" failures="0" errors="0">
+   <testsuite name="Find Test Suite" tests="1" failures="0" errors="0" time="2" timestamp="2018-12-18 14:51:02" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Find/Find Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Find\\Find Test Suite\\20181218_145100"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Find\\Find Test Suite\\20181218_145100\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Find/Test Find By ID" classname="Test Cases/Find/Test Find By ID" status="PASSED">
+         <system-out><![CDATA[2018-12-18 14:51:02 - [TEST_CASE][PASSED] - Test Cases/Find/Test Find By ID: Test Cases/Find/Test Find By ID
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - externalSourceID = "tt0903747": null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - externalSource = "imdb_id": null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Find/Find By ID): Finding Test Object with id 'Object Repository/Find/Find By ID'
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - urlStr = "https://api.themoviedb.org/3/find/" + externalSourceID: null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(urlStr): null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(external_source, com.kms.katalon.core.testobject.ConditionType.EQUALS, externalSource)): null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-18 14:51:03 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-18 14:51:05 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:51:05 - [TEST_STEP][PASSED] - verifyElementPropertyValue: Verify element property value successfully
+
+2018-12-18 14:51:05 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 14:51:02 - [TEST_SUITE][PASSED] - Find Test Suite: Test Cases/Find/Test Find By ID]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

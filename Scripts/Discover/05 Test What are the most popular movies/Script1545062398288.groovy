@@ -26,7 +26,6 @@ params.add(new TestObjectProperty('sort_by', ConditionType.EQUALS, "popularity.d
 reqObj.setRestParameters(params)
 ResponseObject resObj = WS.sendRequest(reqObj)
 
-WS.verifyElementPropertyValue(resObj, 'results[4].title', 'Dragon Ball Super: Broly')
-
 TheMovieDBCommon.printDataValue(resObj, "What are the most popular movies")
 
+WS.verifyElementPropertyValue(resObj, 'results[2].title', 'Dragon Ball Super: Broly')

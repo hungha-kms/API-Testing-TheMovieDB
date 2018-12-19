@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Keywords Test Suite" time="4" tests="2" failures="0" errors="0">
+   <testsuite name="Keywords Test Suite" tests="2" failures="0" errors="0" time="4" timestamp="2018-12-18 15:10:52" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Keywords/Keywords Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Keywords\\Keywords Test Suite\\20181218_151050"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Keywords\\Keywords Test Suite\\20181218_151050\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Keywords/Test Get Details" classname="Test Cases/Keywords/Test Get Details" status="PASSED">
+         <system-out><![CDATA[2018-12-18 15:10:52 - [TEST_CASE][PASSED] - Test Cases/Keywords/Test Get Details: Test Cases/Keywords/Test Get Details
+
+2018-12-18 15:10:53 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Search/Search Keywords)): Send request successfully
+
+2018-12-18 15:10:54 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - resultSize = results.size() - 1: null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - keywordID = null: null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - ro = null: null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - body = "{"dummyRequest":"yes"}": null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - endpoint = "": null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - respObj = null: null
+
+2018-12-18 15:10:54 - [TEST_STEP][PASSED] - Statement - 0.upto(resultSize, { -> ... }): Send request successfully
+
+2018-12-18 15:10:54 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:55 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:55 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:55 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:55 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Keywords/Test Get Movies" classname="Test Cases/Keywords/Test Get Movies" status="PASSED">
+         <system-out><![CDATA[2018-12-18 15:10:55 - [TEST_CASE][PASSED] - Test Cases/Keywords/Test Get Movies: Test Cases/Keywords/Test Get Movies
+
+2018-12-18 15:10:55 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Search/Search Keywords)): Send request successfully
+
+2018-12-18 15:10:56 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - resultSize = results.size() - 1: null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - keywordID = null: null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - ro = null: null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - body = "{"dummyRequest":"yes"}": null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - endpoint = "": null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - respObj = null: null
+
+2018-12-18 15:10:56 - [TEST_STEP][PASSED] - Statement - 0.upto(resultSize, { -> ... }): Send request successfully
+
+2018-12-18 15:10:56 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:56 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:56 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:56 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:10:57 - [MESSAGE][PASSED] - Send request successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 15:10:52 - [TEST_SUITE][PASSED] - Keywords Test Suite: Test Cases/Keywords/Test Get Movies]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

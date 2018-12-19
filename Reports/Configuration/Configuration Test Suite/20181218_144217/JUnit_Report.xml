@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Configuration Test Suite" time="3" tests="1" failures="0" errors="0">
+   <testsuite name="Configuration Test Suite" tests="1" failures="0" errors="0" time="3" timestamp="2018-12-18 14:42:19" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Configuration/Configuration Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Configuration\\Configuration Test Suite\\20181218_144217"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Configuration\\Configuration Test Suite\\20181218_144217\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Configuration/Test Configuration" classname="Test Cases/Configuration/Test Configuration" status="PASSED">
+         <system-out><![CDATA[2018-12-18 14:42:19 - [TEST_CASE][PASSED] - Test Cases/Configuration/Test Configuration: Test Cases/Configuration/Test Configuration
+
+2018-12-18 14:42:20 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get API Configuration)): Send request successfully
+
+2018-12-18 14:42:21 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:42:21 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Configuration/Get API Configuration"): null
+
+2018-12-18 14:42:21 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Countries)): Send request successfully
+
+2018-12-18 14:42:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Configuration/Get Countries"): null
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Jobs)): Send request successfully
+
+2018-12-18 14:42:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Configuration/Get Jobs"): null
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Languages)): Send request successfully
+
+2018-12-18 14:42:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Configuration/Get Languages"): null
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Primary Translations)): Send request successfully
+
+2018-12-18 14:42:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Configuration/Get Primary Translations"): null
+
+2018-12-18 14:42:22 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Configuration/Get Timezones)): Send request successfully
+
+2018-12-18 14:42:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:42:23 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Configuration/Get Timezones"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 14:42:19 - [TEST_SUITE][PASSED] - Configuration Test Suite: Test Cases/Configuration/Test Configuration]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

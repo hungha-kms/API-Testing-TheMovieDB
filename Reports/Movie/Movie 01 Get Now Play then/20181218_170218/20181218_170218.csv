@@ -1,0 +1,17 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Movie 01 Get Now Play then,,,2018-12-18 17:02:19,2018-12-18 17:02:23,3.950s,PASSED
+,,,,,,
+Test Cases/Movie/01 Get Now Playing Get Changes,,,2018-12-18 17:02:20,2018-12-18 17:02:22,2.007s,PASSED
+Statement - response1 = theMovieDB.Movie.getNowPlay(),,,2018-12-18 17:02:20,2018-12-18 17:02:22,1.224s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-18 17:02:22,2018-12-18 17:02:22,0.063s,PASSED
+Statement - If (movieID != -1),,,2018-12-18 17:02:22,2018-12-18 17:02:22,0.240s,PASSED
+,,,,,,
+Test Cases/Movie/02 Get Now Playing Get Alternative Titles,,,2018-12-18 17:02:22,2018-12-18 17:02:22,0.624s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing)),,,2018-12-18 17:02:22,2018-12-18 17:02:22,0.166s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-18 17:02:22,2018-12-18 17:02:22,0.007s,PASSED
+Statement - If (movieID != -1),,,2018-12-18 17:02:22,2018-12-18 17:02:22,0.187s,PASSED
+,,,,,,
+Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details,,,2018-12-18 17:02:22,2018-12-18 17:02:23,0.809s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing)),,,2018-12-18 17:02:23,2018-12-18 17:02:23,0.140s,PASSED
+Statement - movieID = theMovieDB.Movie.getRandomMovie(response1),,,2018-12-18 17:02:23,2018-12-18 17:02:23,0.002s,PASSED
+Statement - If (movieID != -1),,,2018-12-18 17:02:23,2018-12-18 17:02:23,0.372s,PASSED

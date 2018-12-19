@@ -1,0 +1,266 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="List Test Suite" time="12" tests="3" failures="0" errors="0">
+   <testsuite name="List Test Suite" tests="3" failures="0" errors="0" time="12" timestamp="2018-12-18 15:15:01" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/List/List Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\List\\List Test Suite\\20181218_151459"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\List\\List Test Suite\\20181218_151459\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/List/Test Add Movie Check Then Get Details" classname="Test Cases/List/Test Add Movie Check Then Get Details" status="PASSED">
+         <system-out><![CDATA[2018-12-18 15:15:02 - [TEST_CASE][PASSED] - Test Cases/List/Test Add Movie Check Then Get Details: Test Cases/List/Test Add Movie Check Then Get Details
+
+2018-12-18 15:15:02 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-18 15:15:02 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-18 15:15:04 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:04 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:04 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Add Movie): Finding Test Object with id 'Object Repository/List/Add Movie'
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID)): null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - body = null: null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - response1 = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - movieID = null: null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Search/Search Movies)): Send request successfully
+
+2018-12-18 15:15:04 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()): null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - resultSize = results.size() - 1: null
+
+2018-12-18 15:15:04 - [TEST_STEP][PASSED] - Statement - 0.upto(resultSize - 5, { -> ... }): Send request successfully
+
+2018-12-18 15:15:05 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:05 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:05 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:05 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:05 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:06 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:06 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:06 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:06 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:06 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:07 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:07 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:07 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:07 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:07 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:07 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Check Item Status): Finding Test Object with id 'Object Repository/List/Check Item Status'
+
+2018-12-18 15:15:07 - [TEST_STEP][PASSED] - Statement - 0.upto(resultSize - 5, { -> ... }): Verify element property value successfully
+
+2018-12-18 15:15:08 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:08 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:08 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:08 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:08 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:09 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:10 - [MESSAGE][PASSED] - Verify element property value successfully
+
+2018-12-18 15:15:11 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:11 - [MESSAGE][PASSED] - Verify element property value successfully]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/List/Test Create List" classname="Test Cases/List/Test Create List" status="PASSED">
+         <system-out><![CDATA[2018-12-18 15:15:11 - [TEST_CASE][PASSED] - Test Cases/List/Test Create List: Test Cases/List/Test Create List
+
+2018-12-18 15:15:11 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-18 15:15:11 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-18 15:15:11 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:11 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:12 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Create List): Finding Test Object with id 'Object Repository/List/Create List'
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID)): null
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - body = groovy.json.JsonOutput.toJson([name:Lucas Toe List, description:Lucas is very small boy but he know, language:en]): null
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - reqObj.setBodyContent(new com.kms.katalon.core.testobject.impl.HttpTextBodyContent(body)): null
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj): Send request successfully
+
+2018-12-18 15:15:12 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "List/Create List"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/List/Test Remove All Movie in the list" classname="Test Cases/List/Test Remove All Movie in the list" status="PASSED">
+         <system-out><![CDATA[2018-12-18 15:15:12 - [TEST_CASE][PASSED] - Test Cases/List/Test Remove All Movie in the list: Test Cases/List/Test Remove All Movie in the list
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - common = new theMovieDB.TheMovieDBCommon(): null
+
+2018-12-18 15:15:12 - [TEST_STEP][PASSED] - Statement - sessionID = common.getSessionID(): Send request successfully
+
+2018-12-18 15:15:12 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - body = null: null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - response1 = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>: null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - movieID = null: null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - reqObj1 = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Get Details): Finding Test Object with id 'Object Repository/List/Get Details'
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - urlStr = "https://api.themoviedb.org/3/list/" + listID + "?": null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - reqObj1.setRestUrl(urlStr): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - reqObj1.setRestParameters(params): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - itemCount = -1: null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj1): Send request successfully
+
+2018-12-18 15:15:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - If (response1.getStatusCode() != 200): Send request successfully
+
+2018-12-18 15:15:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "List/Get Details"): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - slurper = new groovy.json.JsonSlurper(): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - dataValue = null: null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - println("********** response1.getStatusCode(): " + response1.getStatusCode()): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - If (response1.getStatusCode() == 200): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - println("********** item count: " + itemCount): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Remove Movie): Finding Test Object with id 'Object Repository/List/Remove Movie'
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - urlStr = "https://api.themoviedb.org/3/list/" + listID + "/remove_item?": null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - reqObj.setRestUrl(urlStr): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - params = new java.util.ArrayList(): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey)): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID)): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - reqObj.setRestParameters(params): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - println("********** dataValue: " + dataValue): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - If (itemCount >= 0): null
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj1): Send request successfully
+
+2018-12-18 15:15:13 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 15:15:13 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "List/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 15:15:01 - [TEST_SUITE][PASSED] - List Test Suite: Test Cases/List/Test Remove All Movie in the list]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

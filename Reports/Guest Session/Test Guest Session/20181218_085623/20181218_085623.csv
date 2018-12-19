@@ -1,0 +1,54 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Test Guest Session,,,2018-12-18 08:56:25,2018-12-18 08:56:30,5.115s,FAILED
+,,,,,,
+Test Cases/Guest Session/Test Get Rated Movie,,,2018-12-18 08:56:25,2018-12-18 08:56:28,2.764s,FAILED
+Statement - guestSessionID = theMovieDB.TheMovieDBCommon.getGuestSessionID(),,,2018-12-18 08:56:26,2018-12-18 08:56:27,1.445s,PASSED
+"Statement - println(""********* Guest session id: "" + guestSessionID)",,,2018-12-18 08:56:27,2018-12-18 08:56:27,0.008s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Rate Movie),,,2018-12-18 08:56:27,2018-12-18 08:56:27,0.037s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 08:56:27,2018-12-18 08:56:27,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 08:56:27,2018-12-18 08:56:27,0.044s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(guest_session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.guestSessionID))",,,2018-12-18 08:56:27,2018-12-18 08:56:27,0.011s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 08:56:27,2018-12-18 08:56:27,0.033s,PASSED
+Statement - resp = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 08:56:27,2018-12-18 08:56:28,0.289s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resp, ""Movies/Rate Movie"")",,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.075s,PASSED
+Statement - reqObj1 = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(GuestSession/Get Rated Movie),,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.020s,PASSED
+"Statement - urlStr = ""https://api.themoviedb.org/3/guest_session/"" + guestSessionID + ""/rated/movie""",,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.003s,PASSED
+Statement - reqObj1.setRestUrl(urlStr),,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.004s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.006s,PASSED
+Statement - reqObj1.setRestParameters(params),,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.002s,PASSED
+Statement - resp = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj1),,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.133s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resp, ""GuestSession/Get Rated Movie"")",,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.002s,PASSED
+verifyElementPropertyValue,,,2018-12-18 08:56:28,2018-12-18 08:56:28,0.129s,FAILED
+,,,,,,
+Test Cases/Guest Session/Test Get Rated TV Episode,,,2018-12-18 08:56:28,2018-12-18 08:56:29,1.056s,PASSED
+Statement - guestSessionID = theMovieDB.TheMovieDBCommon.getGuestSessionID(),,,2018-12-18 08:56:28,2018-12-18 08:56:29,0.172s,PASSED
+"Statement - println(""********* Guest session id: "" + guestSessionID)",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.002s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(TV Episodes/Rate TV Episode),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.018s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.002s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(guest_session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, guestSessionID))",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.002s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.005s,PASSED
+Statement - resp = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.185s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resp, ""TV Episodes/Rate TV Episode"")",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.002s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(GuestSession/Get Rated TV Episodes),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.022s,PASSED
+"Statement - urlStr = ""https://api.themoviedb.org/3/guest_session/"" + guestSessionID",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.001s,PASSED
+"Statement - urlStr += ""/rated/tv/episodes?api_key="" + apiKey",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.008s,PASSED
+Statement - reqObj.setRestUrl(urlStr),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.001s,PASSED
+Statement - resp = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.131s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resp, ""GuestSession/Get Rated TV Episodes"")",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.001s,PASSED
+,,,,,,
+Test Cases/Guest Session/Test Get Rated TV Show,,,2018-12-18 08:56:29,2018-12-18 08:56:30,0.815s,PASSED
+Statement - guestSessionID = theMovieDB.TheMovieDBCommon.getGuestSessionID(),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.145s,PASSED
+"Statement - println(""********* Guest session id: "" + guestSessionID)",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.002s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(TV/Rate TV Show),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.013s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(guest_session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, guestSessionID))",,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.001s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 08:56:29,2018-12-18 08:56:29,0.001s,PASSED
+Statement - resp = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 08:56:29,2018-12-18 08:56:30,0.144s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resp, ""Movies/Rate Movie"")",,,2018-12-18 08:56:30,2018-12-18 08:56:30,0.001s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(GuestSession/Get Rated TV),,,2018-12-18 08:56:30,2018-12-18 08:56:30,0.009s,PASSED
+"Statement - urlStr = ""https://api.themoviedb.org/3/guest_session/"" + guestSessionID",,,2018-12-18 08:56:30,2018-12-18 08:56:30,0.001s,PASSED
+"Statement - urlStr += ""/rated/tv?api_key="" + apiKey",,,2018-12-18 08:56:30,2018-12-18 08:56:30,0.001s,PASSED
+Statement - reqObj.setRestUrl(urlStr),,,2018-12-18 08:56:30,2018-12-18 08:56:30,0.000s,PASSED
+Statement - resp = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 08:56:30,2018-12-18 08:56:30,0.149s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(resp, ""GuestSession/Get Rated TV"")",,,2018-12-18 08:56:30,2018-12-18 08:56:30,0.001s,PASSED

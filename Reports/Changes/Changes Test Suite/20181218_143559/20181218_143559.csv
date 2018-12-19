@@ -1,0 +1,14 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Changes Test Suite,,,2018-12-18 14:36:01,2018-12-18 14:36:06,5.229s,PASSED
+,,,,,,
+Test Cases/Changes/01 Test Get Movie Change List,,,2018-12-18 14:36:02,2018-12-18 14:36:04,2.062s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Changes/Get Movie Change List)),,,2018-12-18 14:36:02,2018-12-18 14:36:04,1.524s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Changes/Get Movie Change List"")",,,2018-12-18 14:36:04,2018-12-18 14:36:04,0.118s,PASSED
+,,,,,,
+Test Cases/Changes/02 Test Get Person Change List,,,2018-12-18 14:36:04,2018-12-18 14:36:05,0.974s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Changes/Get Person Change List)),,,2018-12-18 14:36:04,2018-12-18 14:36:05,0.577s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Changes/Get Person Change List"")",,,2018-12-18 14:36:05,2018-12-18 14:36:05,0.030s,PASSED
+,,,,,,
+Test Cases/Changes/03 Test Get TV Change List,,,2018-12-18 14:36:05,2018-12-18 14:36:06,1.670s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Changes/Get TV Change List)),,,2018-12-18 14:36:05,2018-12-18 14:36:06,1.350s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Changes/Get TV Change List"")",,,2018-12-18 14:36:06,2018-12-18 14:36:06,0.030s,PASSED

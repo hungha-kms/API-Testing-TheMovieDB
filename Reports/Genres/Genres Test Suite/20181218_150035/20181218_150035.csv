@@ -1,0 +1,10 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Genres Test Suite,,,2018-12-18 15:00:37,2018-12-18 15:00:40,3.044s,PASSED
+,,,,,,
+Test Cases/Genres/01 Test Get Movie List,,,2018-12-18 15:00:38,2018-12-18 15:00:40,1.861s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Genres/Get Movie List)),,,2018-12-18 15:00:38,2018-12-18 15:00:40,1.399s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Genres/Get Movie List"")",,,2018-12-18 15:00:40,2018-12-18 15:00:40,0.096s,PASSED
+,,,,,,
+Test Cases/Genres/02 Test Get TV List,,,2018-12-18 15:00:40,2018-12-18 15:00:40,0.554s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Genres/Get TV List)),,,2018-12-18 15:00:40,2018-12-18 15:00:40,0.148s,PASSED
+"Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, ""Genres/Get TV List"")",,,2018-12-18 15:00:40,2018-12-18 15:00:40,0.006s,PASSED

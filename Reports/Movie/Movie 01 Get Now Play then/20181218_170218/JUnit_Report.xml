@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Movie 01 Get Now Play then" time="3" tests="3" failures="0" errors="0">
+   <testsuite name="Movie 01 Get Now Play then" tests="3" failures="0" errors="0" time="3" timestamp="2018-12-18 17:02:19" hostname="DESKTOP-EG6P0UN$ - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Movie/Movie 01 Get Now Play then">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Movie\\Movie 01 Get Now Play then\\20181218_170218"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Movie\\Movie 01 Get Now Play then\\20181218_170218\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="DESKTOP-EG6P0UN$ - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Movie/01 Get Now Playing Get Changes" classname="Test Cases/Movie/01 Get Now Playing Get Changes" status="PASSED">
+         <system-out><![CDATA[2018-12-18 17:02:20 - [TEST_CASE][PASSED] - Test Cases/Movie/01 Get Now Playing Get Changes: Test Cases/Movie/01 Get Now Playing Get Changes
+
+2018-12-18 17:02:20 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Movie.getNowPlay(): Send request successfully
+
+2018-12-18 17:02:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - movieID = theMovieDB.Movie.getRandomMovie(response1): null
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - If (movieID != -1): null
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Movie.getChanges(movieID): Send request successfully
+
+2018-12-18 17:02:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Movies/Get Changes"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Movie/02 Get Now Playing Get Alternative Titles" classname="Test Cases/Movie/02 Get Now Playing Get Alternative Titles" status="PASSED">
+         <system-out><![CDATA[2018-12-18 17:02:22 - [TEST_CASE][PASSED] - Test Cases/Movie/02 Get Now Playing Get Alternative Titles: Test Cases/Movie/02 Get Now Playing Get Alternative Titles
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing)): Send request successfully
+
+2018-12-18 17:02:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - movieID = theMovieDB.Movie.getRandomMovie(response1): null
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - If (movieID != -1): null
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Movie.getAlternativeTitles(movieID): Send request successfully
+
+2018-12-18 17:02:22 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 17:02:22 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Movies/Get Alternative Titles"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <testcase name="Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details" classname="Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details" status="PASSED">
+         <system-out><![CDATA[2018-12-18 17:02:22 - [TEST_CASE][PASSED] - Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details: Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Movies/Get Now Playing)): Send request successfully
+
+2018-12-18 17:02:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - movieID = theMovieDB.Movie.getRandomMovie(response1): null
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - If (movieID != -1): null
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Movie.getReviews(movieID): Send request successfully
+
+2018-12-18 17:02:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Movies/Get Reviews"): null
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - reviewID = theMovieDB.Movie.getRandomReview(response1): null
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - If (reviewID != null): null
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - response1 = theMovieDB.Reviews.getDetails(reviewID): Send request successfully
+
+2018-12-18 17:02:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 17:02:23 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Reviews/Get Details"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 17:02:19 - [TEST_SUITE][PASSED] - Movie 01 Get Now Play then: Test Cases/Movie/03 Get Now Playing Get Reviews then Get Review Details]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

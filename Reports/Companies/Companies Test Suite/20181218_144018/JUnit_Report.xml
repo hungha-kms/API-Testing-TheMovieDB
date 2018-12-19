@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="Companies Test Suite" time="2" tests="1" failures="0" errors="0">
+   <testsuite name="Companies Test Suite" tests="1" failures="0" errors="0" time="2" timestamp="2018-12-18 14:40:20" hostname="hatha - DESKTOP-EG6P0UN.attlocal.net" id="Test Suites/Companies/Companies Test Suite">
+      <properties>
+         <property name="deviceName" value=""/>
+         <property name="devicePlatform" value=""/>
+         <property name="logFolder" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Companies\\Companies Test Suite\\20181218_144018"/>
+         <property name="logFiles" value="C:\\Training\\API Testing\\APITestingTheMovieDB\\Reports\\Companies\\Companies Test Suite\\20181218_144018\\execution0.log"/>
+         <property name="attachments" value=""/>
+         <property name="hostName" value="hatha - DESKTOP-EG6P0UN.attlocal.net"/>
+         <property name="hostAddress" value="192.168.1.80"/>
+         <property name="os" value="Windows 10 64bit"/>
+         <property name="katalonVersion" value="5.8.5.1"/>
+      </properties>
+      <testcase name="Test Cases/Companies/Test Get Details Images Translations" classname="Test Cases/Companies/Test Get Details Images Translations" status="PASSED">
+         <system-out><![CDATA[2018-12-18 14:40:21 - [TEST_CASE][PASSED] - Test Cases/Companies/Test Get Details Images Translations: Test Cases/Companies/Test Get Details Images Translations
+
+2018-12-18 14:40:21 - [TEST_STEP][PASSED] - Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Companies/Get Details)): Send request successfully
+
+2018-12-18 14:40:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:40:23 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response1, "Companies/Get Details"): null
+
+2018-12-18 14:40:23 - [TEST_STEP][PASSED] - Statement - response2 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Companies/Get Altenative Names)): Send request successfully
+
+2018-12-18 14:40:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:40:23 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response2, "Companies/Get Altenative Names"): null
+
+2018-12-18 14:40:23 - [TEST_STEP][PASSED] - Statement - response3 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Companies/Get Images)): Send request successfully
+
+2018-12-18 14:40:23 - [MESSAGE][PASSED] - Send request successfully
+
+2018-12-18 14:40:23 - [TEST_STEP][PASSED] - Statement - theMovieDB.TheMovieDBCommon.printDataValue(response3, "Companies/Get Images"): null]]></system-out>
+         <system-err><![CDATA[]]></system-err>
+      </testcase>
+      <system-out><![CDATA[2018-12-18 14:40:20 - [TEST_SUITE][PASSED] - Companies Test Suite: Test Cases/Companies/Test Get Details Images Translations]]></system-out>
+      <system-err><![CDATA[]]></system-err>
+   </testsuite>
+</testsuites>

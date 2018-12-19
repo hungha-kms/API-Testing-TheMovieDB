@@ -1,0 +1,21 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+List 01 Test Add Movie Check Then Get Details,,,2018-12-18 15:18:29,2018-12-18 15:18:38,8.453s,PASSED
+,,,,,,
+Test Cases/List/Test Add Movie Check Then Get Details,,,2018-12-18 15:18:30,2018-12-18 15:18:38,7.913s,PASSED
+Statement - common = new theMovieDB.TheMovieDBCommon(),,,2018-12-18 15:18:30,2018-12-18 15:18:30,0.009s,PASSED
+Statement - sessionID = common.getSessionID(),,,2018-12-18 15:18:30,2018-12-18 15:18:32,1.907s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Add Movie),,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.037s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.001s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.022s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(session_id, com.kms.katalon.core.testobject.ConditionType.EQUALS, sessionID))",,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.002s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.002s,PASSED
+Statement - body = null,,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.002s,PASSED
+Statement - response1 = <not implemented yet for class: org.codehaus.groovy.ast.expr.EmptyExpression>,,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.001s,PASSED
+Statement - movieID = null,,,2018-12-18 15:18:32,2018-12-18 15:18:32,0.001s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Search/Search Movies)),,,2018-12-18 15:18:32,2018-12-18 15:18:33,0.167s,PASSED
+Statement - slurper = new groovy.json.JsonSlurper(),,,2018-12-18 15:18:33,2018-12-18 15:18:33,0.001s,PASSED
+Statement - dataValue = slurper.parseText(response1.getResponseBodyContent()),,,2018-12-18 15:18:33,2018-12-18 15:18:33,0.007s,PASSED
+Statement - resultSize = results.size() - 1,,,2018-12-18 15:18:33,2018-12-18 15:18:33,0.004s,PASSED
+"Statement - 0.upto(resultSize - 5, { -> ... })",,,2018-12-18 15:18:33,2018-12-18 15:18:35,2.475s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(List/Check Item Status),,,2018-12-18 15:18:35,2018-12-18 15:18:35,0.009s,PASSED
+"Statement - 0.upto(resultSize - 5, { -> ... })",,,2018-12-18 15:18:35,2018-12-18 15:18:38,2.618s,PASSED

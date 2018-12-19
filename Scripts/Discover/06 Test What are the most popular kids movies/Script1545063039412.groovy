@@ -30,4 +30,4 @@ ResponseObject resObj = WS.sendRequest(reqObj)
 
 TheMovieDBCommon.printDataValue(resObj, "What are the most popular kids movies")
 
-WS.verifyElementPropertyValue(resObj, 'results[13].title', 'Avengers: Infinity War')
+WS.verifyElementPropertyValue(resObj, 'results[13].title', 'Mowgli: Legend of the Jungle')

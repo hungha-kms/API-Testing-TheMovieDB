@@ -1,0 +1,15 @@
+Suite/Test/Step Name,Browser,Description,Start time,End time,Duration,Status
+Find Test Suite,,,2018-12-18 14:51:02,2018-12-18 14:51:05,2.771s,PASSED
+,,,,,,
+Test Cases/Find/Test Find By ID,,,2018-12-18 14:51:02,2018-12-18 14:51:05,2.233s,PASSED
+"Statement - externalSourceID = ""tt0903747""",,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.001s,PASSED
+"Statement - externalSource = ""imdb_id""",,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.001s,PASSED
+Statement - reqObj = com.kms.katalon.core.testobject.ObjectRepository.findTestObject(Find/Find By ID),,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.039s,PASSED
+"Statement - urlStr = ""https://api.themoviedb.org/3/find/"" + externalSourceID",,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.001s,PASSED
+Statement - reqObj.setRestUrl(urlStr),,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.038s,PASSED
+Statement - params = new java.util.ArrayList(),,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.012s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(api_key, com.kms.katalon.core.testobject.ConditionType.EQUALS, internal.GlobalVariable.apiKey))",,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.047s,PASSED
+"Statement - params.add(new com.kms.katalon.core.testobject.TestObjectProperty(external_source, com.kms.katalon.core.testobject.ConditionType.EQUALS, externalSource))",,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.009s,PASSED
+Statement - reqObj.setRestParameters(params),,,2018-12-18 14:51:03,2018-12-18 14:51:03,0.002s,PASSED
+Statement - response1 = com.kms.katalon.core.webservice.keyword.WSBuiltInKeywords.sendRequest(reqObj),,,2018-12-18 14:51:03,2018-12-18 14:51:05,1.437s,PASSED
+verifyElementPropertyValue,,,2018-12-18 14:51:05,2018-12-18 14:51:05,0.108s,PASSED
